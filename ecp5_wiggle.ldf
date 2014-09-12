@@ -2,9 +2,12 @@
 <BaliProject version="3.2" title="ecp5_wiggle" device="LFE5UM-85F-7BG756C" default_implementation="ecp5_wiggle">
     <Options/>
     <Implementation title="ecp5_wiggle" dir="ecp5_wiggle" description="ecp5_wiggle" synthesis="synplify" default_strategy="Strategy1">
-        <Options def_top="wiggle"/>
+        <Options def_top="claritycores"/>
         <Source name="ecp5_wiggle/source/wiggle.v" type="Verilog" type_short="Verilog">
             <Options top_module="wiggle"/>
+        </Source>
+        <Source name="claritycores/claritycores.sbx" type="sbx" type_short="SBX">
+            <Options top_module="claritycores"/>
         </Source>
         <Source name="ecp5_wiggle.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
