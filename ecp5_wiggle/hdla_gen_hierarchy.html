@@ -3,6 +3,9 @@ Starting: parse design source files
 INFO - (VHDL-1504) The default vhdl library search path is now "C:/lscc/diamond/3.2_x64/cae_library/vhdl_packages/vdbs"
 (VERI-1482) Analyzing Verilog file C:/lscc/diamond/3.2_x64/cae_library/synthesis/verilog/ecp5um.v
 (VERI-1482) Analyzing Verilog file Z:/Source/ecp5dev_wiggle/ecp5_wiggle/source/wiggle.v
+ERROR - Z:/Source/ecp5dev_wiggle/ecp5_wiggle/source/wiggle.v(1,32-1,36) (VERI-1125) gpio is not a port
+ERROR - Z:/Source/ecp5dev_wiggle/ecp5_wiggle/source/wiggle.v(1,1-163,10) (VERI-1072) module wiggle ignored due to previous errors
+(VERI-1483) Verilog file Z:/Source/ecp5dev_wiggle/ecp5_wiggle/source/wiggle.v ignored due to errors
 (VERI-1482) Analyzing Verilog file Z:/Source/ecp5dev_wiggle/claritycores/./pcie_end/pcie_end.v
 (VERI-1482) Analyzing Verilog file Z:/Source/ecp5dev_wiggle/claritycores/./pcie_end/pcie_end_core_bb.v
 (VERI-1482) Analyzing Verilog file Z:/Source/ecp5dev_wiggle/claritycores/./pcie_end/pcie_end_phy_bb.v
@@ -22,14 +25,12 @@ WARNING - (VBSR-1011) file C:/lscc/diamond/3.2_x64/cae_library/vhdl_packages/vdb
 WARNING - (VBSR-1011) file C:/lscc/diamond/3.2_x64/cae_library/vhdl_packages/vdbs/ecp3/components.vdb is not an encrypted database, turning off decryption before restoring it
 INFO - Z:/Source/ecp5dev_wiggle/claritycores/./pcie_end/pcie_end.vhd(13,8-13,16) (VHDL-1012) analyzing entity pcie_end
 INFO - Z:/Source/ecp5dev_wiggle/claritycores/./pcie_end/pcie_end.vhd(133,14-133,18) (VHDL-1010) analyzing architecture arch
-INFO - Z:/Source/ecp5dev_wiggle/ecp5_wiggle/source/wiggle.v(1,8-1,14) (VERI-1018) compiling module wiggle
-INFO - Z:/Source/ecp5dev_wiggle/ecp5_wiggle/source/wiggle.v(1,1-49,10) (VERI-9000) elaborating module 'wiggle'
 INFO - Z:/Source/ecp5dev_wiggle/claritycores/./claritycores.v(11,8-11,20) (VERI-1018) compiling module claritycores
 INFO - Z:/Source/ecp5dev_wiggle/claritycores/./claritycores.v(11,1-188,10) (VERI-9000) elaborating module 'claritycores'
 INFO - Z:/Source/ecp5dev_wiggle/claritycores/./pcie_end/pcie_end.v(23,1-363,10) (VERI-9000) elaborating module 'pcie_end_uniq_1'
 INFO - Z:/Source/ecp5dev_wiggle/claritycores/./refclk_inst/refclk_inst.v(8,1-19,10) (VERI-9000) elaborating module 'refclk_inst_uniq_1'
 INFO - C:/lscc/diamond/3.2_x64/cae_library/synthesis/verilog/ecp5um.v(693,1-696,10) (VERI-9000) elaborating module 'PUR_uniq_1'
 INFO - C:/lscc/diamond/3.2_x64/cae_library/synthesis/verilog/ecp5um.v(1751,1-1758,10) (VERI-9000) elaborating module 'EXTREFB_uniq_1'
-Done: design load finished with (0) errors, and (5) warnings
+Done: design load finished with (2) errors, and (5) warnings
 
 </PRE></BODY></HTML>
