@@ -2,7 +2,7 @@ module wiggle (clk, rstn, led, gpio, perstn, refclkp, refclkn, hdinp0, hdinn0, h
 
 input clk, rstn;
 output [7:0] led;
-
+output [23:0] gpio;
 input perstn, refclkp, refclkn, hdinp0, hdinn0;
 output hdoutp0, hdoutn0;
 
@@ -120,8 +120,8 @@ claritycores _inst (
 	.pcie_end_tx_lbk_rdy(), 
 	.pcie_end_tx_lbk_kcntl(2'd0),
 	.pcie_end_tx_lbk_data(16'd0),
-	.pcie_end_rx_lbk_kcntl(2'd0),
-	.pcie_end_rx_lbk_data(16'd0), 
+	.pcie_end_rx_lbk_kcntl(),
+	.pcie_end_rx_lbk_data(), 
 
 	.pcie_end_flip_lanes(1'b0), 
 
@@ -157,7 +157,7 @@ claritycores _inst (
 	.pcie_end_mm_enable( ),
 	.pcie_end_msi_enable( ),
 	.pcie_end_pme_status(1'b0), 
-	.pcie_end_pme_en(1'b0),
+	.pcie_end_pme_en(),
 	.pcie_end_pm_power_state( ));
 
 endmodule
