@@ -6,38 +6,38 @@
             <Task name="IBIS_AMI" build_result="0" update_result="2" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="0"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1410495869"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1412633731"/>
             <Task name="Promgen" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1410495611">
-            <Task name="Map" build_result="2" update_result="0" update_time="1410495611"/>
+        <Milestone name="Map" build_result="2" build_time="1412633470">
+            <Task name="Map" build_result="2" update_result="0" update_time="1412633470"/>
             <Task name="MapTrace" build_result="0" update_result="2" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1410495812">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1410495812"/>
+        <Milestone name="PAR" build_result="2" build_time="1412633679">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1412633679"/>
             <Task name="PARTrace" build_result="0" update_result="2" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1410495435">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1410495435"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1412633293">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1412633293"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1410495391"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1412632454"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1410495527">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1410495527"/>
+        <Milestone name="Translate" build_result="2" build_time="1412633343">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1412633343"/>
         </Milestone>
-        <Report name="ecp5_wiggle_ecp5_wiggle.bgn" last_build_time="1410495866" last_build_size="4106"/>
-        <Report name="ecp5_wiggle_ecp5_wiggle.bit" last_build_time="1410495866" last_build_size="1928043"/>
-        <Report name="ecp5_wiggle_ecp5_wiggle.edi" last_build_time="1410495430" last_build_size="309991"/>
-        <Report name="ecp5_wiggle_ecp5_wiggle.ncd" last_build_time="1410495812" last_build_size="8551539"/>
-        <Report name="ecp5_wiggle_ecp5_wiggle.ngd" last_build_time="1410495527" last_build_size="6276028"/>
-        <Report name="ecp5_wiggle_ecp5_wiggle_map.ncd" last_build_time="1410495610" last_build_size="6049992"/>
+        <Report name="ecp5_wiggle_ecp5_wiggle.bgn" last_build_time="1412633730" last_build_size="4770"/>
+        <Report name="ecp5_wiggle_ecp5_wiggle.bit" last_build_time="1412633730" last_build_size="1928043"/>
+        <Report name="ecp5_wiggle_ecp5_wiggle.edi" last_build_time="1412633285" last_build_size="111232"/>
+        <Report name="ecp5_wiggle_ecp5_wiggle.ncd" last_build_time="1412633678" last_build_size="8026845"/>
+        <Report name="ecp5_wiggle_ecp5_wiggle.ngd" last_build_time="1412633404" last_build_size="6075021"/>
+        <Report name="ecp5_wiggle_ecp5_wiggle_map.ncd" last_build_time="1412633470" last_build_size="5703679"/>
     </Strategy>
 </BuildStatus>
