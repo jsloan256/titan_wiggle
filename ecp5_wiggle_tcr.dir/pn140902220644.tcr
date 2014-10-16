@@ -1,5 +1,0 @@
-#Start recording tcl command: 9/2/2014 22:05:21
-#Project Location: Z:/Source/tmp; Project name: ecp5_wiggle
-prj_project new -name "ecp5_wiggle" -impl "ecp5_wiggle" -dev LFE5UM-85F-7BG756C -synthesis "synplify"
-prj_project save
-#Stop recording: 9/2/2014 22:06:44
