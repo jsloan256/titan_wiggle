@@ -19,7 +19,7 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>Z:/Source/ecp5dev_wiggle/ecp5_wiggle/ecp5_wiggle_ecp5_wiggle.bit</File>
+			<File>Z:/Source/titan_wiggle/titan_wiggle/titan_wiggle_titan_wiggle.bit</File>
 			<FileTime>09/03/14 09:00:24</FileTime>
 			<Operation>Fast Program</Operation>
 			<Option>
