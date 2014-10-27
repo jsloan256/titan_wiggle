@@ -9,7 +9,7 @@ This project provides a simple test platform the the Lattice ECP5 PCI Expres Boa
   * Vendor ID is beef
 
 # Dependencies
-* Lattice Diamond 3.2
+* Lattice Diamond 3.3
 * PCI Express x1/x2/x4 Endpoint - Optimized for ECP5UM (6.0_asr)
 
 # Build Instructions

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BaliProject version="3.2" title="ecp5_wiggle" device="LFE5UM-85F-7BG756C" default_implementation="ecp5_wiggle">
+<BaliProject version="3.2" title="ecp5_wiggle" device="LFE5UM-85F-7BG756CES" default_implementation="ecp5_wiggle">
     <Options/>
     <Implementation title="ecp5_wiggle" dir="ecp5_wiggle" description="ecp5_wiggle" synthesis="synplify" default_strategy="Strategy1">
         <Options def_top="wiggle"/>
