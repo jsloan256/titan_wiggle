@@ -1,9 +1,9 @@
-# ecp5dev_wiggle
+# titan_wiggle
 
-This project provides a simple test platform the the Lattice ECP5 PCI Expres Board (dev card).
+This is a simple Verilog project to validate the Titan PCI Express development card for the Lattice ECP5 FPGA
 
 # Features
-* Blinks LEDs D1..D8
+* Toggles GPIO pins on P3 and P5 expansion header (slow enough for LEDs)
 * Enumerates the PCIe express interface in x1 mode
   * Device ID is dead
   * Vendor ID is beef
@@ -13,7 +13,7 @@ This project provides a simple test platform the the Lattice ECP5 PCI Expres Boa
 * PCI Express x1/x2/x4 Endpoint - Optimized for ECP5UM (6.0_asr)
 
 # Build Instructions
-* Open the project (ecp5dev_wiggle.ldf)
+* Open the project (titan_wiggle.ldf)
 * Open Clarity Designer by double-clicking on claritycores.sbx in the file list
   * Re-configure the refclk_inst core
     * Right-click on refclk_inst, then select **Config**
