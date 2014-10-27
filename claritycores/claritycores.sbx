@@ -1282,19 +1282,24 @@
             </spirit:ports>
         </spirit:model>
         <spirit:vendorExtensions>
-            <lattice:device>LFE5UM-85F-7BG756C</lattice:device>
+            <lattice:device>LFE5UM-85F-7BG756CES</lattice:device>
+            <lattice:synthesis>synplify</lattice:synthesis>
             <lattice:date>2014-09-03.19:24:01</lattice:date>
-            <lattice:modified>2014-09-11.21:13:37</lattice:modified>
-            <lattice:diamond>3.2.0.134</lattice:diamond>
+            <lattice:modified>2014-10-27.13:30:01</lattice:modified>
+            <lattice:diamond>3.3.0.109</lattice:diamond>
             <lattice:language>Verilog</lattice:language>
             <lattice:attributes>
                 <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                 <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
                 <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
                 <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
                 <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
                 <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
                 <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
             </lattice:attributes>
             <lattice:elements/>
             <lattice:lpc/>
@@ -1350,10 +1355,50 @@
                                 <spirit:name>./pcie_end/pcie_end_phy_bb.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
                             </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end.vhd</spirit:name>
+                                <spirit:fileType>vhdlSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end_core_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end_phy_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
                         </spirit:fileset>
                         <spirit:fileset>
                             <spirit:name>Diamond_Synthesis</spirit:name>
                             <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end.vhd</spirit:name>
+                                <spirit:fileType>vhdlSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end_core_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end_phy_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end_core.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_end/pcie_end_phy.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
                             <spirit:file>
                                 <spirit:name>./pcie_end/pcie_end.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
@@ -2218,19 +2263,24 @@
                         </spirit:ports>
                     </spirit:model>
                     <spirit:vendorExtensions>
+                        <lattice:synthesis>synplify</lattice:synthesis>
                         <lattice:date>2013-09-22.14:14:33</lattice:date>
-                        <lattice:modified>2014-09-11.21:13:37</lattice:modified>
+                        <lattice:modified>2014-10-27.13:30:01</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
                             <lattice:attribute lattice:name="CoreType">IPCFG</lattice:attribute>
                             <lattice:attribute lattice:name="DCU_RXREFCLK">DCU0_EXTREF</lattice:attribute>
                             <lattice:attribute lattice:name="DCU_TXREFCLK">DCU0_EXTREF</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Resource"></lattice:attribute>
                         </lattice:attributes>
                         <lattice:elements>
@@ -2261,7 +2311,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>PartName</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F-7BG756C</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F-7BG756CES</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>PartType</lattice:lpckey>
@@ -2294,7 +2344,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">09/09/2014</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">10/27/2014</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -2310,7 +2360,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">19:17:21</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">13:19:36</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -2775,19 +2825,24 @@
                         </spirit:ports>
                     </spirit:model>
                     <spirit:vendorExtensions>
-                        <lattice:modified>2014-09-11.21:13:37</lattice:modified>
+                        <lattice:synthesis>synplify</lattice:synthesis>
+                        <lattice:modified>2014-10-27.13:30:01</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="BBox">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
                             <lattice:attribute lattice:name="CoreType">LPM</lattice:attribute>
                             <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
                             <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
                         </lattice:attributes>
                         <lattice:elements>
                             <lattice:element>
@@ -2817,7 +2872,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>PartName</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F-7BG756C</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F-7BG756CES</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>PartType</lattice:lpckey>
@@ -2850,7 +2905,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">09/09/2014</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">10/27/2014</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -2866,7 +2921,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">19:36:04</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">13:17:22</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
