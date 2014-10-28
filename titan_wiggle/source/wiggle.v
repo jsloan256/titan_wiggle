@@ -1,19 +1,18 @@
-module wiggle (clk, rstn, led, gpio, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0);
+module wiggle (clk, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0);
 
-input clk, rstn;
-output [7:0] led;
-output [23:0] gpio;
+input clk;
+output [31:0] gpio_a;
+output [31:0] gpio_b;
 input perstn, refclkp, refclkn, hdinp0, hdinn0;
 output hdoutp0, hdoutn0;
 
 reg [23:0] count;
-reg [7:0] sreg;
+reg [31:0] sreg;
 reg shift;
-wire rstn;
-wire [7:0] led;
-wire [23:0] gpio;
+wire [31:0] gpio_a;
+wire [31:0] gpio_b;
 
-assign rst = ~rstn;
+assign rst = ~perstn;
 
 always @(posedge clk or posedge rst)
 begin
@@ -36,17 +35,17 @@ end
 always @(posedge clk or posedge rst)
 begin
 	if (rst) begin
-		sreg <= 8'b1111_1110;
+		sreg <= 32'b1111_1111_1111_1111_1111_1111_1111_1110;
 	end else if (shift == 1) begin
 		sreg <= sreg << 1;
-		sreg[0] <= sreg[7];
+		sreg[0] <= sreg[31];
 //	end else begin
 //		sreg <= sreg;
 	end
 end
 
-assign led = sreg;
-assign gpio = count;
+assign gpio_a = sreg;
+assign gpio_b = sreg;
 
 
 
