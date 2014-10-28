@@ -11,11 +11,11 @@ CoreName=EXTREF
 CoreRevision=1.1
 CoreStatus=Demo
 CoreType=LPM
-Date=10/27/2014
+Date=10/28/2014
 ModuleName=refclk_inst
 ParameterFileVersion=1.0
 SourceFormat=verilog
-Time=22:31:58
+Time=06:41:52
 VendorName=Lattice Semiconductor Corporation
 [Parameters]
 Destination=Synplicity
@@ -28,4 +28,4 @@ Order=Big Endian [MSB:LSB]
 VHDL=0
 Verilog=1
 [SYSTEMPNR]
-EXTREF=DCU1
+EXTREF=DCU0
