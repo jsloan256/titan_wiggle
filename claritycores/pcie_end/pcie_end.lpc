@@ -1,10 +1,10 @@
 [Device]
 Family=sa5p00m
-OperatingCondition=COM
-Package=CABGA756
-PartName=LFE5UM-85F-7BG756CES
+OperatingCondition=IND
+Package=CABGA381
+PartName=LFE5UM-85F-8BG381IES
 PartType=LFE5UM-85F
-SpeedGrade=7
+SpeedGrade=8
 Status=C
 [IP]
 CoreName=PCI Express Endpoint Core
@@ -15,7 +15,7 @@ Date=10/27/2014
 ModuleName=pcie_end
 ParameterFileVersion=1.0
 SourceFormat=verilog
-Time=17:38:28
+Time=22:35:36
 VendorName=Lattice Semiconductor Corporation
 [Parameters]
 AER=0
@@ -108,12 +108,5 @@ pcie_pcs.txt=pcs_module
 pcs_pipe_8b_x1.txt=pcs_module
 pcs_pipe_8b_x4.txt=pcs_module
 pcs_pipe_bb.v=black_box_verilog
-[FilesGenerated]
-pcie_end.lpc=LPC
-pcie_end.v=wrapper
-pcie_end_core.ngo=database
-pcie_end_core_bb.v=blackbox
-pcie_end_phy.ngo=database
-pcie_end_phy_bb.v=blackbox
 [SYSTEMPNR]
 LN0=DCU0_CH0

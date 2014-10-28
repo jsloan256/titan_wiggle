@@ -5,8 +5,8 @@ This is a simple Verilog project to validate the Titan PCI Express development c
 # Features
 * Toggles GPIO pins on P3 and P5 expansion header (slow enough for LEDs)
 * Enumerates the PCIe express interface in x1 mode
-  * Device ID is dead
-  * Vendor ID is beef
+  * Device ID is beef
+  * Vendor ID is dead
 
 # Dependencies
 * Lattice Diamond 3.3
