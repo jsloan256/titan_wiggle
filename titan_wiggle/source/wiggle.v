@@ -1,5 +1,6 @@
-module wiggle (gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0);
+module wiggle (clk, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0);
 
+input clk;
 output [31:0] gpio_a;
 output [31:0] gpio_b;
 input perstn, refclkp, refclkn, hdinp0, hdinn0;
@@ -57,7 +58,7 @@ claritycores _inst (
 	.pcie_end_hdoutp0(hdoutp0), 
 	.pcie_end_hdoutn0(hdoutn0),
 	.pcie_end_rst_n(perstn),
-	.pcie_end_sys_clk_125(clk), 
+	.pcie_end_sys_clk_125(), 
 
 	// Transmit TLP Interface
 	.pcie_end_tx_data_vc0(16'd0),
