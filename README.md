@@ -15,11 +15,11 @@ This is a simple Verilog project to validate the Titan PCI Express development c
 # Build Instructions
 * Open the project (titan_wiggle.ldf)
 * Open Clarity Designer by double-clicking on claritycores.sbx in the file list
-  * Re-configure the refclk_inst core
-    * Right-click on refclk_inst, then select **Config**
+  * Re-configure the refclk core
+    * Right-click on refclk, then select **Config**
     * In the new dialog, click **Configure** and then **Close** when the process completes
-  * Re-configure the pcie_end core
-    * Right-click on pcie_end, then select **Config**
+  * Re-configure the pcie_x1 core
+    * Right-click on pcie_x1, then select **Config**
     * In the new dialog, click **Configure** and then **Close** when the process completes
   * Click on the **Generate** button at the top of the Clarity Designer window
 * Build the FPGA bitstream
