@@ -2,7 +2,7 @@
 Family=ecp5um
 OperatingCondition=IND
 Package=CABGA381
-PartName=LFE5UM-85F-8BG381IES
+PartName=LFE5UM-85F-8BG381I
 PartType=LFE5UM-85F
 SpeedGrade=8
 Status=C
@@ -11,11 +11,11 @@ CoreName=EXTREF
 CoreRevision=1.1
 CoreStatus=Demo
 CoreType=LPM
-Date=10/28/2014
-ModuleName=refclk_inst
+Date=12/02/2014
+ModuleName=refclk
 ParameterFileVersion=1.0
 SourceFormat=verilog
-Time=06:41:52
+Time=19:10:00
 VendorName=Lattice Semiconductor Corporation
 [Parameters]
 Destination=Synplicity

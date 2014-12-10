@@ -9,7 +9,7 @@ This is a simple Verilog project to validate the Titan PCI Express development c
   * Vendor ID is dead
 
 # Dependencies
-* Lattice Diamond 3.3
+* Lattice Diamond 3.2
 * PCI Express x1/x2/x4 Endpoint - Optimized for ECP5UM (6.0_asr)
 
 # Build Instructions

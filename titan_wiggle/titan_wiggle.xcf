@@ -19,8 +19,8 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>Z:/Source/titan_wiggle/titan_wiggle/titan_wiggle_titan_wiggle.bit</File>
-			<FileTime>09/03/14 09:00:24</FileTime>
+			<File>Z:/Source/titan_wiggle_32/titan_wiggle/titan_wiggle_titan_wiggle.bit</File>
+			<FileTime>12/02/14 19:36:43</FileTime>
 			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -42,9 +42,9 @@
 		<VerifyUsercode value="FALSE"/>
 	</ProjectOptions>
 	<CableOptions>
-		<CableName>USB2</CableName>
-		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>Lattice FTUSB Interface Cable A Location 0000 Serial A</USBID>
+		<CableName>USB</CableName>
+		<PortAdd>EzUSB-0</PortAdd>
+		<USBID>\\?\usb#vid_1134&amp;amp;pid_8001#6&amp;amp;6ee641b&amp;amp;0&amp;amp;1#</USBID>
 		<JTAGPinSetting>
 			TRST	ABSENT;
 			ISPEN	ABSENT;
