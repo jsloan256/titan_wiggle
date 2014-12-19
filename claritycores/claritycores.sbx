@@ -1282,9 +1282,9 @@
             </spirit:ports>
         </spirit:model>
         <spirit:vendorExtensions>
-            <lattice:device>LFE5UM-85F-8BG381I</lattice:device>
-            <lattice:date>2014-12-02.18:55:06</lattice:date>
-            <lattice:modified>2014-12-02.19:29:42</lattice:modified>
+            <lattice:device>LFE5UM-45F-6BG381C</lattice:device>
+            <lattice:date>2014-12-18.22:32:23</lattice:date>
+            <lattice:modified>2014-12-18.22:50:33</lattice:modified>
             <lattice:diamond>3.2.0.134</lattice:diamond>
             <lattice:language>Verilog</lattice:language>
             <lattice:attributes>
@@ -1334,50 +1334,10 @@
                                 <spirit:name>./pcie_x1/pcie_x1_phy_bb.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
                             </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.vhd</spirit:name>
-                                <spirit:fileType>vhdlSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_phy_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
                         </spirit:fileset>
                         <spirit:fileset>
                             <spirit:name>Diamond_Synthesis</spirit:name>
                             <spirit:group>synthesis</spirit:group>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.vhd</spirit:name>
-                                <spirit:fileType>vhdlSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_phy_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core.ngo</spirit:name>
-                                <spirit:userFileType>NGO</spirit:userFileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_phy.ngo</spirit:name>
-                                <spirit:userFileType>NGO</spirit:userFileType>
-                            </spirit:file>
                             <spirit:file>
                                 <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
@@ -2219,7 +2179,7 @@
                     </spirit:model>
                     <spirit:vendorExtensions>
                         <lattice:date>2013-09-22.14:14:33</lattice:date>
-                        <lattice:modified>2014-12-02.19:29:42</lattice:modified>
+                        <lattice:modified>2014-12-18.22:50:33</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -2253,7 +2213,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>OperatingCondition</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">COM</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Package</lattice:lpckey>
@@ -2261,15 +2221,15 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>PartName</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F-8BG381I</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-45F-6BG381C</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>PartType</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-45F</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>SpeedGrade</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">6</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Status</lattice:lpckey>
@@ -2294,7 +2254,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">12/02/2014</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">12/18/2014</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -2310,7 +2270,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">18:59:35</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">22:37:43</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -2775,7 +2735,7 @@
                         </spirit:ports>
                     </spirit:model>
                     <spirit:vendorExtensions>
-                        <lattice:modified>2014-12-02.19:29:42</lattice:modified>
+                        <lattice:modified>2014-12-18.22:50:33</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="BBox">false</lattice:attribute>
@@ -2809,7 +2769,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>OperatingCondition</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">COM</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Package</lattice:lpckey>
@@ -2817,15 +2777,15 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>PartName</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F-8BG381I</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-45F-6BG381C</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>PartType</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-45F</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>SpeedGrade</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">6</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Status</lattice:lpckey>
@@ -2850,7 +2810,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">12/02/2014</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">12/18/2014</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -2866,7 +2826,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">19:10:00</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">22:44:43</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
