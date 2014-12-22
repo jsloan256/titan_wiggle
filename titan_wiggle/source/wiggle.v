@@ -1,4 +1,4 @@
-module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dsq0, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt);
+module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs0, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt);
 
 input osc;
 output [31:0] gpio_a;
@@ -185,26 +185,26 @@ claritycores _inst (
 	.ddr3_x16_em_ddr_reset_n(ddr3_rstn),
 	.ddr3_x16_em_ddr_clk(ddr3_ck0),
 	.ddr3_x16_em_ddr_cke(ddr3_cke),
-	.ddr3_x16_em_ddr_addr(ddr3_a)
+	.ddr3_x16_em_ddr_addr(ddr3_a),
 	.ddr3_x16_em_ddr_ba(ddr3_ba), 
 	.ddr3_x16_em_ddr_data(ddr3_d),
 	.ddr3_x16_em_ddr_dm(ddr3_dm),
 	.ddr3_x16_em_ddr_dqs(ddr3_dqs0), 
 	.ddr3_x16_em_ddr_cs_n(ddr3_csn), 
 	.ddr3_x16_em_ddr_cas_n(ddr3_casn), 
-	.ddr3_x16_em_ddr_ras_n(ddr3_rasn)
+	.ddr3_x16_em_ddr_ras_n(ddr3_rasn),
 	.ddr3_x16_em_ddr_we_n(ddr3_wen), 
 	.ddr3_x16_em_ddr_odt(ddr3_odt),
 
 	// Local user interface
 	.ddr3_x16_clk_in(clk125),
 	.ddr3_x16_sclk_out(),
-	.ddr3_x16_clocking_good(1'b1),
+	.ddr3_x16_clocking_good(),
 	.ddr3_x16_rst_n(rstn), 
 	.ddr3_x16_mem_rst_n(rstn), 
 	.ddr3_x16_init_start(1'b0),
 	.ddr3_x16_cmd(4'b0000),
-	.ddr3_x16_cmd_valid(1b'0),
+	.ddr3_x16_cmd_valid(1'b0),
 	.ddr3_x16_addr(26'd0),
 	.ddr3_x16_cmd_burst_cnt(5'b00000), 
 	.ddr3_x16_ofly_burst_len(1'b0),
@@ -212,10 +212,10 @@ claritycores _inst (
 	.ddr3_x16_data_mask(8'd0),
 	.ddr3_x16_init_done(),
 	.ddr3_x16_cmd_rdy(), 
-	.ddr3_x16_datain_rdy()
+	.ddr3_x16_datain_rdy(),
 	.ddr3_x16_read_data(),
 	.ddr3_x16_read_data_valid(),
-	.ddr3_x16_wl_err(),
+	.ddr3_x16_wl_err()
 );
 
 endmodule
