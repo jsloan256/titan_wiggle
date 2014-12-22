@@ -197,7 +197,7 @@ claritycores _inst (
 	.ddr3_x16_em_ddr_odt(ddr3_odt),
 
 	// Local user interface
-	.ddr3_x16_clk_in(clk125),
+	.ddr3_x16_clk_in(osc),
 	.ddr3_x16_sclk_out(),
 	.ddr3_x16_clocking_good(),
 	.ddr3_x16_rst_n(rstn), 
