@@ -21,5 +21,8 @@ This is a simple Verilog project to validate the Titan PCI Express development c
   * Re-configure the pcie_x1 core
     * Right-click on pcie_x1, then select **Config**
     * In the new dialog, click **Configure** and then **Close** when the process completes
+  * Re-configure the ddr3_x16 core
+    * Right-click on ddr3_x16, then select **Config**
+    * In the new dialog, click **Configure** and then **Close** when the process completes
   * Click on the **Generate** button at the top of the Clarity Designer window
 * Build the FPGA bitstream
