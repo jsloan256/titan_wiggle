@@ -1,4 +1,4 @@
-module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs0, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt);
+module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt);
 
 input osc;
 output [31:0] gpio_a;
@@ -13,7 +13,7 @@ output [13:0] ddr3_a;
 output [2:0] ddr3_ba;
 inout [15:0] ddr3_d;
 output [1:0] ddr3_dm;
-inout [1:0] ddr3_dqs0;
+inout [1:0] ddr3_dqs;
 output ddr3_csn;
 output ddr3_casn; 
 output ddr3_rasn;
@@ -189,7 +189,7 @@ claritycores _inst (
 	.ddr3_x16_em_ddr_ba(ddr3_ba), 
 	.ddr3_x16_em_ddr_data(ddr3_d),
 	.ddr3_x16_em_ddr_dm(ddr3_dm),
-	.ddr3_x16_em_ddr_dqs(ddr3_dqs0), 
+	.ddr3_x16_em_ddr_dqs(ddr3_dqs), 
 	.ddr3_x16_em_ddr_cs_n(ddr3_csn), 
 	.ddr3_x16_em_ddr_cas_n(ddr3_casn), 
 	.ddr3_x16_em_ddr_ras_n(ddr3_rasn),
