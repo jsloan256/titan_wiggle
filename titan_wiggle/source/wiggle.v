@@ -1,11 +1,27 @@
-module wiggle (clk, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0);
+module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt);
 
-input clk;
+input osc;
 output [31:0] gpio_a;
 output [31:0] gpio_b;
 input perstn, refclkp, refclkn, hdinp0, hdinn0;
 output hdoutp0, hdoutn0;
 
+output ddr3_rstn;
+output ddr3_ck0;
+output ddr3_cke;
+output [13:0] ddr3_a;
+output [2:0] ddr3_ba;
+inout [15:0] ddr3_d;
+output [1:0] ddr3_dm;
+inout [1:0] ddr3_dqs;
+output ddr3_csn;
+output ddr3_casn; 
+output ddr3_rasn;
+output ddr3_wen;
+output ddr3_odt;
+
+wire clk;
+wire clk125;
 reg [23:0] count;
 reg [31:0] sreg;
 reg shift;
@@ -13,6 +29,8 @@ wire [31:0] gpio_a;
 wire [31:0] gpio_b;
 
 assign rst = ~perstn;
+assign rstn = ~rst;
+assign clk = clk125;
 
 always @(posedge clk or posedge rst)
 begin
@@ -50,6 +68,8 @@ assign gpio_b = sreg;
 
 
 claritycores _inst (
+	// PCIe interface
+	// --------------------
 	// Physcial Pins
 	.refclk_refclkp(refclkp),
 	.refclk_refclkn(refclkn),
@@ -58,7 +78,7 @@ claritycores _inst (
 	.pcie_x1_hdoutp0(hdoutp0), 
 	.pcie_x1_hdoutn0(hdoutn0),
 	.pcie_x1_rst_n(perstn),
-	.pcie_x1_sys_clk_125(), 
+	.pcie_x1_sys_clk_125(clk125), 
 
 	// Transmit TLP Interface
 	.pcie_x1_tx_data_vc0(16'd0),
@@ -157,6 +177,45 @@ claritycores _inst (
 	.pcie_x1_msi_enable( ),
 	.pcie_x1_pme_status(1'b0), 
 	.pcie_x1_pme_en(),
-	.pcie_x1_pm_power_state( ));
+	.pcie_x1_pm_power_state( ),
+
+	// DDR3 interface
+	// --------------------
+	// Physcial Pins
+	.ddr3_x16_em_ddr_reset_n(ddr3_rstn),
+	.ddr3_x16_em_ddr_clk(ddr3_ck0),
+	.ddr3_x16_em_ddr_cke(ddr3_cke),
+	.ddr3_x16_em_ddr_addr(ddr3_a),
+	.ddr3_x16_em_ddr_ba(ddr3_ba), 
+	.ddr3_x16_em_ddr_data(ddr3_d),
+	.ddr3_x16_em_ddr_dm(ddr3_dm),
+	.ddr3_x16_em_ddr_dqs(ddr3_dqs), 
+	.ddr3_x16_em_ddr_cs_n(ddr3_csn), 
+	.ddr3_x16_em_ddr_cas_n(ddr3_casn), 
+	.ddr3_x16_em_ddr_ras_n(ddr3_rasn),
+	.ddr3_x16_em_ddr_we_n(ddr3_wen), 
+	.ddr3_x16_em_ddr_odt(ddr3_odt),
+
+	// Local user interface
+	.ddr3_x16_clk_in(osc),
+	.ddr3_x16_sclk_out(),
+	.ddr3_x16_clocking_good(),
+	.ddr3_x16_rst_n(rstn), 
+	.ddr3_x16_mem_rst_n(rstn), 
+	.ddr3_x16_init_start(1'b0),
+	.ddr3_x16_cmd(4'b0000),
+	.ddr3_x16_cmd_valid(1'b0),
+	.ddr3_x16_addr(26'd0),
+	.ddr3_x16_cmd_burst_cnt(5'b00000), 
+	.ddr3_x16_ofly_burst_len(1'b0),
+	.ddr3_x16_write_data(64'd0), 
+	.ddr3_x16_data_mask(8'd0),
+	.ddr3_x16_init_done(),
+	.ddr3_x16_cmd_rdy(), 
+	.ddr3_x16_datain_rdy(),
+	.ddr3_x16_read_data(),
+	.ddr3_x16_read_data_valid(),
+	.ddr3_x16_wl_err()
+);
 
 endmodule
