@@ -1728,14 +1728,14 @@
         <spirit:vendorExtensions>
             <lattice:device>LFE5UM-45F-6BG381C</lattice:device>
             <lattice:date>2014-12-18.22:32:23</lattice:date>
-            <lattice:modified>2014-12-21.16:04:06</lattice:modified>
+            <lattice:modified>2014-12-22.21:03:08</lattice:modified>
             <lattice:diamond>3.2.0.134</lattice:diamond>
             <lattice:language>Verilog</lattice:language>
             <lattice:attributes>
-                <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                <lattice:attribute lattice:name="AddComponent">true</lattice:attribute>
                 <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
                 <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
-                <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConnect">true</lattice:attribute>
                 <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
                 <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
                 <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
@@ -1778,10 +1778,82 @@
                                 <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
                             </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_params_ddr3_x16.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_x16_beh.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_params_ddr3_x16.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_x16_beh.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
                         </spirit:fileset>
                         <spirit:fileset>
                             <spirit:name>Diamond_Synthesis</spirit:name>
                             <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_x16_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_x16.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_x16_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr3_x16.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
                             <spirit:file>
                                 <spirit:name>./ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
@@ -2164,13 +2236,13 @@
                     </spirit:model>
                     <spirit:vendorExtensions>
                         <lattice:date>2013-08-07.14:14:33</lattice:date>
-                        <lattice:modified>2014-12-21.16:04:06</lattice:modified>
+                        <lattice:modified>2014-12-22.21:03:08</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
-                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">true</lattice:attribute>
                             <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
                             <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
                             <lattice:attribute lattice:name="CoreType">IPCFG</lattice:attribute>
@@ -2207,7 +2279,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">CLKDIV</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">42</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2218,7 +2289,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">DDRDLL</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">11</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2239,7 +2309,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">79</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">137</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2250,7 +2320,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">77</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">158</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2261,7 +2331,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">81</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">139</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2272,7 +2342,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">215</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2283,7 +2352,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">147</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">205</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2294,7 +2363,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">149</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">207</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2305,7 +2374,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">164</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">221</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2316,7 +2385,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">151</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">209</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2327,7 +2396,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">158</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">213</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2338,7 +2407,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">155</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">211</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2349,7 +2418,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">213</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2360,7 +2428,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">217</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2371,7 +2438,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">207</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2382,7 +2448,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">205</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2393,7 +2458,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">211</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2404,7 +2468,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">221</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2415,7 +2478,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">209</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2426,7 +2488,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">162</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">217</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2437,7 +2499,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">160</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">215</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2448,7 +2510,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">203</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2459,7 +2520,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">145</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">203</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2470,7 +2531,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">DQSLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">222</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2481,7 +2541,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">DQSLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">156</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">222</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2492,7 +2552,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">75</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2503,7 +2562,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">118</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">155</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2514,7 +2573,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">114</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2525,7 +2583,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">110</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">153</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2536,7 +2594,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">94</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2547,7 +2604,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">102</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">160</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2558,7 +2615,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">106</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2569,7 +2625,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">96</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2580,7 +2635,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">116</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2591,7 +2645,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">112</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2602,7 +2655,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">108</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2613,7 +2665,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">104</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2624,7 +2675,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">100</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2635,7 +2685,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">98</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2646,7 +2695,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">89</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2657,7 +2705,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">92</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">151</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2668,7 +2716,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">87</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2679,7 +2726,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">83</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">147</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2690,7 +2737,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">120</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">141</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2701,7 +2748,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">122</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2712,7 +2758,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IOLOGIC</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">85</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2748,7 +2793,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">EDGECLK</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">52</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2760,7 +2804,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">EDGECLK</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">50</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
                             </lattice:element>
@@ -2794,7 +2837,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">74</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2807,7 +2849,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">117</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">154</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2820,7 +2862,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">113</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2833,7 +2874,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">109</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">152</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2846,7 +2887,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">93</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2859,7 +2899,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">101</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">159</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2872,7 +2912,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">105</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2885,7 +2924,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">95</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2898,7 +2936,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">115</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2911,7 +2948,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">111</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2924,7 +2960,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">107</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2937,7 +2972,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">103</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2950,7 +2984,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">99</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2963,7 +2996,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">97</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2976,7 +3008,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">88</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -2989,7 +3020,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">91</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">150</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3002,7 +3033,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">86</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3015,7 +3045,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">78</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">136</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3028,7 +3058,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">82</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">146</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3041,7 +3071,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">119</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">140</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3054,7 +3084,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">121</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3067,7 +3096,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">214</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3080,7 +3108,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">146</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">204</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3093,7 +3121,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">148</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">206</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3106,7 +3134,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">163</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">220</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3119,7 +3147,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">150</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">208</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3132,7 +3160,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">157</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">212</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3145,7 +3173,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">154</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">210</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3158,7 +3186,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">212</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3171,7 +3198,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">216</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3184,7 +3210,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">206</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3197,7 +3222,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">204</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3210,7 +3234,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">210</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3223,7 +3246,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">220</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3236,7 +3258,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">208</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3249,7 +3270,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">161</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">216</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3262,7 +3283,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">159</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">214</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3275,7 +3296,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">202</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3288,7 +3308,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">144</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">202</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3301,7 +3321,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">218</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3314,7 +3333,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">152</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">218</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3327,7 +3346,6 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">84</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3340,7 +3358,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">76</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">157</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -3353,7 +3371,7 @@
                                     <lattice:attribute lattice:name="ElementDrag">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementHide">false</lattice:attribute>
                                     <lattice:attribute lattice:name="ElementType">IO</lattice:attribute>
-                                    <lattice:attribute lattice:name="Locate">80</lattice:attribute>
+                                    <lattice:attribute lattice:name="Locate">138</lattice:attribute>
                                     <lattice:attribute lattice:name="isPort">true</lattice:attribute>
                                     <lattice:attribute lattice:name="ngd">true</lattice:attribute>
                                 </lattice:attributes>
@@ -4151,10 +4169,90 @@
                         <spirit:fileset>
                             <spirit:name>Diamond_Simulation</spirit:name>
                             <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1.vhd</spirit:name>
+                                <spirit:fileType>vhdlSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_phy_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1.vhd</spirit:name>
+                                <spirit:fileType>vhdlSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_phy_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
                         </spirit:fileset>
                         <spirit:fileset>
                             <spirit:name>Diamond_Synthesis</spirit:name>
                             <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1.vhd</spirit:name>
+                                <spirit:fileType>vhdlSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_phy_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_core.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_phy.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1.vhd</spirit:name>
+                                <spirit:fileType>vhdlSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_phy_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_core.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./pcie_x1/pcie_x1_phy.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
                         </spirit:fileset>
                     </spirit:fileSets>
                     <spirit:componentGenerators>
@@ -4972,7 +5070,7 @@
                     </spirit:model>
                     <spirit:vendorExtensions>
                         <lattice:date>2013-09-22.14:14:33</lattice:date>
-                        <lattice:modified>2014-12-21.16:04:06</lattice:modified>
+                        <lattice:modified>2014-12-22.21:03:08</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -5047,7 +5145,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">12/18/2014</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">12/21/2014</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -5063,7 +5161,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">22:37:43</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">22:29:42</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -5457,10 +5555,18 @@
                         <spirit:fileset>
                             <spirit:name>Diamond_Simulation</spirit:name>
                             <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./refclk/refclk.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
                         </spirit:fileset>
                         <spirit:fileset>
                             <spirit:name>Diamond_Synthesis</spirit:name>
                             <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./refclk/refclk.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
                         </spirit:fileset>
                     </spirit:fileSets>
                     <spirit:componentGenerators>
@@ -5520,7 +5626,7 @@
                         </spirit:ports>
                     </spirit:model>
                     <spirit:vendorExtensions>
-                        <lattice:modified>2014-12-21.16:04:06</lattice:modified>
+                        <lattice:modified>2014-12-22.21:03:08</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="BBox">false</lattice:attribute>
@@ -5595,7 +5701,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">12/18/2014</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">12/21/2014</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -5611,7 +5717,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">22:44:43</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">22:27:47</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
