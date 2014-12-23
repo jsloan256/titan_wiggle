@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BaliProject version="3.2" title="titan_wiggle" device="LFE5UM-85F-8BG381I" default_implementation="titan_wiggle">
+<BaliProject version="3.2" title="titan_wiggle" device="LFE5UM-45F-6BG381C" default_implementation="titan_wiggle">
     <Options/>
     <Implementation title="titan_wiggle" dir="titan_wiggle" description="titan_wiggle" synthesis="synplify" default_strategy="Strategy1">
         <Options def_top="wiggle" top="wiggle"/>
