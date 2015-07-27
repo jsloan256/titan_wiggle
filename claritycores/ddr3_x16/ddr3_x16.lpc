@@ -5,7 +5,7 @@ PartName=LFE5UM-45F-6BG381C
 SpeedGrade=6
 Package=CABGA381
 OperatingCondition=COM
-Status=C
+Status=P
 
 [IP]
 VendorName=Lattice Semiconductor Corporation
@@ -16,8 +16,8 @@ CoreRevision=3.0
 ModuleName=ddr3_x16
 SourceFormat=verilog
 ParameterFileVersion=3.0
-Date=05/29/2015
-Time=18:39:12
+Date=07/26/2015
+Time=17:47:26
 
 [Parameters]
 DDRType=2

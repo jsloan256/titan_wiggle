@@ -9,16 +9,17 @@ This is a simple Verilog project to validate the Titan PCI Express development c
   * Vendor ID is dead
 
 # Dependencies
-* Lattice Diamond 3.2
-* PCI Express x1/x2/x4 Endpoint - Optimized for ECP5UM (pci_express_endpoint_v6.0)
+* Lattice Diamond 3.5
+* PCI Express x1/x2/x4 Endpoint - Optimized for ECP5UM (pci_express_endpoint_v6.1)
 * DDR3 SDRAM Controller - v3.0
 
 # Build Instructions
 * Open the project (titan_wiggle.ldf)
 * Open Clarity Designer by double-clicking on claritycores.sbx in the file list
   * Download and install the IP cores (if not installed)
-    * Click on the **Lattice IP Server** tab
-    * Locate the **PCI Express Endpoint** core and verify that the description is **PCI Express x1/x2/x4 Endpoint - Optiminzed for LatticeECP3 and ECP5UM** and the version is 6.0
+    * Click on the **Catalog** tab at the top of the Clarity window
+    * Click on the **Lattice IP Server** tab at the bottom of the Clarity window
+    * Locate the **PCI Express Endpoint** core and verify that the description is **PCI Express x1/x2/x4 Endpoint - Optiminzed for LatticeECP3 and ECP5UM** and the version is 6.1
     * Locate the **DDR3 SDRAM Controller** core and verify that the version is 3.0
   * Re-configure the refclk core
     * Right-click on refclk, then select **Config**

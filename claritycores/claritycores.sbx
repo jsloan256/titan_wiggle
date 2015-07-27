@@ -820,6 +820,114 @@
                     </spirit:vendorExtensions>
                 </spirit:port>
                 <spirit:port>
+                    <spirit:name>pcie_x1_sci_en</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_en</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_en</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_sci_en_dual</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_en_dual</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_en_dual</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_sci_int</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_int</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_int</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_sci_rd</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_rd</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_rd</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_sci_sel</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_sel</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_sel</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_sci_sel_dual</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_sel_dual</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_sel_dual</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_sci_wrn</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_wrn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_wrn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_serdes_pdb</spirit:name>
+                    <spirit:displayName>pcie_x1_serdes_pdb</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.serdes_pdb</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_serdes_rst_dual_c</spirit:name>
+                    <spirit:displayName>pcie_x1_serdes_rst_dual_c</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.serdes_rst_dual_c</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
                     <spirit:name>pcie_x1_sys_clk_125</spirit:name>
                     <spirit:displayName>pcie_x1_sys_clk_125</spirit:displayName>
                     <spirit:wire>
@@ -904,6 +1012,18 @@
                     </spirit:vendorExtensions>
                 </spirit:port>
                 <spirit:port>
+                    <spirit:name>pcie_x1_tx_pwrup_c</spirit:name>
+                    <spirit:displayName>pcie_x1_tx_pwrup_c</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.tx_pwrup_c</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
                     <spirit:name>pcie_x1_tx_rdy_vc0</spirit:name>
                     <spirit:displayName>pcie_x1_tx_rdy_vc0</spirit:displayName>
                     <spirit:wire>
@@ -924,6 +1044,18 @@
                     <spirit:vendorExtensions>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="exportFrom">pcie_x1.tx_req_vc0</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_tx_serdes_rst_c</spirit:name>
+                    <spirit:displayName>pcie_x1_tx_serdes_rst_c</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.tx_serdes_rst_c</lattice:attribute>
                         </lattice:attributes>
                     </spirit:vendorExtensions>
                 </spirit:port>
@@ -1544,6 +1676,54 @@
                     </spirit:vendorExtensions>
                 </spirit:port>
                 <spirit:port>
+                    <spirit:name>pcie_x1_sci_addr</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_addr</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>5</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_addr</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_sci_rddata</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_rddata</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>7</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_rddata</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>pcie_x1_sci_wrdata</spirit:name>
+                    <spirit:displayName>pcie_x1_sci_wrdata</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>7</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">pcie_x1.sci_wrdata</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
                     <spirit:name>pcie_x1_tx_ca_cpld_vc0</spirit:name>
                     <spirit:displayName>pcie_x1_tx_ca_cpld_vc0</spirit:displayName>
                     <spirit:wire>
@@ -1740,10 +1920,9 @@
         <spirit:vendorExtensions>
             <lattice:device>LFE5UM-45F-6BG381C</lattice:device>
             <lattice:synthesis>synplify</lattice:synthesis>
-            <lattice:date>2014-12-18.22:32:23</lattice:date>
-            <lattice:modified>2015-05-29.19:21:04</lattice:modified>
-            <lattice:diamond>3.4.0.80</lattice:diamond>
-            <lattice:language>Verilog</lattice:language>
+            <lattice:date>2015-07-24.17:47:39</lattice:date>
+            <lattice:modified>2015-07-26.20:55:33</lattice:modified>
+            <lattice:diamond>3.5.0.102</lattice:diamond>
             <lattice:attributes>
                 <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                 <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -1795,46 +1974,10 @@
                                 <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
                             </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_params_ddr3_x16.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr3_x16_beh.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
                         </spirit:fileset>
                         <spirit:fileset>
                             <spirit:name>Diamond_Synthesis</spirit:name>
                             <spirit:group>synthesis</spirit:group>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr3_x16_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr3_x16.ngo</spirit:name>
-                                <spirit:userFileType>NGO</spirit:userFileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./ddr3_x16/ddr_clks_ddr3_x16.ngo</spirit:name>
-                                <spirit:userFileType>NGO</spirit:userFileType>
-                            </spirit:file>
                             <spirit:file>
                                 <spirit:name>./ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
@@ -2235,7 +2378,7 @@
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
                         <lattice:date>2013-08-07.14:14:33</lattice:date>
-                        <lattice:modified>2015-05-29.19:21:04</lattice:modified>
+                        <lattice:modified>2015-07-26.20:55:33</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -3599,7 +3742,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Status</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">C</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcsection lattice:name="IP"/>
                             <lattice:lpcentry>
@@ -3620,7 +3763,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">05/29/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">07/26/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -3636,7 +3779,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">18:39:12</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">17:47:26</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -4425,35 +4568,11 @@
                     <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
                     <spirit:library>LEGACY</spirit:library>
                     <spirit:name>PCI Express Endpoint Core</spirit:name>
-                    <spirit:version>6.0</spirit:version>
+                    <spirit:version>6.1</spirit:version>
                     <spirit:fileSets>
                         <spirit:fileset>
                             <spirit:name>Diamond_Simulation</spirit:name>
                             <spirit:group>simulation</spirit:group>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
                             <spirit:file>
                                 <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
@@ -4491,7 +4610,7 @@
                                 <spirit:fileType>verilogSource</spirit:fileType>
                             </spirit:file>
                             <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs_rsl.v</spirit:name>
+                                <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs_softlogic.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
                             </spirit:file>
                             <spirit:file>
@@ -4505,70 +4624,6 @@
                             <spirit:file>
                                 <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_phy.v</spirit:name>
                                 <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_eval/pcie_x1/src/params/pci_exp_params.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core.ngo</spirit:name>
-                                <spirit:userFileType>NGO</spirit:userFileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_sync1s.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_ctc.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs_rsl.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pipe.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_eval/models/ecp5um/pcie_x1_phy.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core.ngo</spirit:name>
-                                <spirit:userFileType>NGO</spirit:userFileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core_bb.v</spirit:name>
-                                <spirit:fileType>verilogSource</spirit:fileType>
-                            </spirit:file>
-                            <spirit:file>
-                                <spirit:name>./pcie_x1/pcie_x1_core.ngo</spirit:name>
-                                <spirit:userFileType>NGO</spirit:userFileType>
                             </spirit:file>
                         </spirit:fileset>
                     </spirit:fileSets>
@@ -5001,6 +5056,32 @@
                                 </spirit:wire>
                             </spirit:port>
                             <spirit:port>
+                                <spirit:name>serdes_pdb</spirit:name>
+                                <spirit:displayName>serdes_pdb</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>serdes_rst_dual_c</spirit:name>
+                                <spirit:displayName>serdes_rst_dual_c</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>sli_rst</spirit:name>
+                                <spirit:displayName>sli_rst</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="Hide">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
                                 <spirit:name>sys_clk_125</spirit:name>
                                 <spirit:displayName>sys_clk_125</spirit:displayName>
                                 <spirit:wire>
@@ -5050,6 +5131,13 @@
                                 </spirit:wire>
                             </spirit:port>
                             <spirit:port>
+                                <spirit:name>tx_pwrup_c</spirit:name>
+                                <spirit:displayName>tx_pwrup_c</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
                                 <spirit:name>tx_rdy_vc0</spirit:name>
                                 <spirit:displayName>tx_rdy_vc0</spirit:displayName>
                                 <spirit:wire>
@@ -5061,6 +5149,13 @@
                                 <spirit:displayName>tx_req_vc0</spirit:displayName>
                                 <spirit:wire>
                                     <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>tx_serdes_rst_c</spirit:name>
+                                <spirit:displayName>tx_serdes_rst_c</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
                                 </spirit:wire>
                             </spirit:port>
                             <spirit:port>
@@ -5470,7 +5565,7 @@
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
                         <lattice:date>2013-09-22.14:14:33</lattice:date>
-                        <lattice:modified>2015-05-29.19:21:04</lattice:modified>
+                        <lattice:modified>2015-07-26.20:55:33</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -5528,7 +5623,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Status</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">C</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcsection lattice:name="IP"/>
                             <lattice:lpcentry>
@@ -5537,7 +5632,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>CoreRevision</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">6.0</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">6.1</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>CoreStatus</lattice:lpckey>
@@ -5549,7 +5644,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">05/29/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">07/25/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -5565,7 +5660,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">10:56:17</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">21:14:38</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -5627,6 +5722,10 @@
                             <lattice:lpcentry>
                                 <lattice:lpckey>CLASS_CODE</lattice:lpckey>
                                 <lattice:lpcvalue lattice:resolve="constant">000000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CORE_SYNP</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Channel</lattice:lpckey>
@@ -5769,6 +5868,10 @@
                                 <lattice:lpcvalue lattice:resolve="constant">00</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
+                                <lattice:lpckey>NOT_CFG_REG</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
                                 <lattice:lpckey>NO_DSN</lattice:lpckey>
                                 <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
                             </lattice:lpcentry>
@@ -5873,6 +5976,10 @@
                                 <lattice:lpcvalue lattice:resolve="constant">PCSA</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
+                                <lattice:lpckey>REFCLK_RATE</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">100.0000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
                                 <lattice:lpckey>REV_ID</lattice:lpckey>
                                 <lattice:lpcvalue lattice:resolve="constant">00</lattice:lpcvalue>
                             </lattice:lpcentry>
@@ -5891,6 +5998,10 @@
                             <lattice:lpcentry>
                                 <lattice:lpckey>StsWidth</lattice:lpckey>
                                 <lattice:lpcvalue lattice:resolve="constant">3</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>TXPLLMULT</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">25X</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>TX_MAX_RATE</lattice:lpckey>
@@ -6031,7 +6142,7 @@
                     </spirit:model>
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
-                        <lattice:modified>2015-05-29.19:21:04</lattice:modified>
+                        <lattice:modified>2015-07-26.20:55:33</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="BBox">false</lattice:attribute>
@@ -6089,7 +6200,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Status</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">C</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcsection lattice:name="IP"/>
                             <lattice:lpcentry>
@@ -6110,7 +6221,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">05/29/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">07/25/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -6126,7 +6237,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">19:20:45</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">21:35:41</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -6604,6 +6715,60 @@
                 <spirit:externalPortReference spirit:portRef="pcie_x1_rx_us_req_vc0"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_en</spirit:name>
+                <spirit:displayName>pcie_x1_sci_en</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_en" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_en"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_en_dual</spirit:name>
+                <spirit:displayName>pcie_x1_sci_en_dual</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_en_dual" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_en_dual"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_int</spirit:name>
+                <spirit:displayName>pcie_x1_sci_int</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_int" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_int"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rd</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rd</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rd" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rd"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_sel</spirit:name>
+                <spirit:displayName>pcie_x1_sci_sel</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_sel" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_sel"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_sel_dual</spirit:name>
+                <spirit:displayName>pcie_x1_sci_sel_dual</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_sel_dual" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_sel_dual"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrn</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_wrn" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_serdes_pdb</spirit:name>
+                <spirit:displayName>pcie_x1_serdes_pdb</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="serdes_pdb" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_serdes_pdb"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_serdes_rst_dual_c</spirit:name>
+                <spirit:displayName>pcie_x1_serdes_rst_dual_c</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="serdes_rst_dual_c" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_serdes_rst_dual_c"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
                 <spirit:name>pcie_x1_sys_clk_125</spirit:name>
                 <spirit:displayName>pcie_x1_sys_clk_125</spirit:displayName>
                 <spirit:internalPortReference spirit:portRef="sys_clk_125" spirit:componentRef="pcie_x1"/>
@@ -6646,6 +6811,12 @@
                 <spirit:externalPortReference spirit:portRef="pcie_x1_tx_nlfy_vc0"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
+                <spirit:name>pcie_x1_tx_pwrup_c</spirit:name>
+                <spirit:displayName>pcie_x1_tx_pwrup_c</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="tx_pwrup_c" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_tx_pwrup_c"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_rdy_vc0</spirit:name>
                 <spirit:displayName>pcie_x1_tx_rdy_vc0</spirit:displayName>
                 <spirit:internalPortReference spirit:portRef="tx_rdy_vc0" spirit:componentRef="pcie_x1"/>
@@ -6656,6 +6827,12 @@
                 <spirit:displayName>pcie_x1_tx_req_vc0</spirit:displayName>
                 <spirit:internalPortReference spirit:portRef="tx_req_vc0" spirit:componentRef="pcie_x1"/>
                 <spirit:externalPortReference spirit:portRef="pcie_x1_tx_req_vc0"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_tx_serdes_rst_c</spirit:name>
+                <spirit:displayName>pcie_x1_tx_serdes_rst_c</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="tx_serdes_rst_c" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_tx_serdes_rst_c"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_st_vc0</spirit:name>
@@ -9319,6 +9496,156 @@
                 <spirit:displayName>pcie_x1_rxdp_vsd_data[9]</spirit:displayName>
                 <spirit:internalPortReference spirit:portRef="rxdp_vsd_data[9]" spirit:componentRef="pcie_x1"/>
                 <spirit:externalPortReference spirit:portRef="pcie_x1_rxdp_vsd_data[9]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_addr</spirit:name>
+                <spirit:displayName>pcie_x1_sci_addr</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="sci_addr" spirit:componentRef="pcie_x1" spirit:left="5"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_sci_addr" spirit:left="5"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_addr[0]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_addr[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_addr[0]"/>
+                <spirit:internalPortReference spirit:portRef="sci_addr[0]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_addr[1]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_addr[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_addr[1]"/>
+                <spirit:internalPortReference spirit:portRef="sci_addr[1]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_addr[2]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_addr[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_addr[2]"/>
+                <spirit:internalPortReference spirit:portRef="sci_addr[2]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_addr[3]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_addr[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_addr[3]"/>
+                <spirit:internalPortReference spirit:portRef="sci_addr[3]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_addr[4]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_addr[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_addr[4]"/>
+                <spirit:internalPortReference spirit:portRef="sci_addr[4]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_addr[5]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_addr[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_addr[5]"/>
+                <spirit:internalPortReference spirit:portRef="sci_addr[5]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="sci_rddata" spirit:componentRef="pcie_x1" spirit:left="7"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_sci_rddata" spirit:left="7"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata[0]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rddata[0]" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rddata[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata[1]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rddata[1]" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rddata[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata[2]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rddata[2]" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rddata[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata[3]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rddata[3]" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rddata[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata[4]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rddata[4]" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rddata[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata[5]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rddata[5]" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rddata[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata[6]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rddata[6]" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rddata[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_rddata[7]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_rddata[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="sci_rddata[7]" spirit:componentRef="pcie_x1"/>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_rddata[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="sci_wrdata" spirit:componentRef="pcie_x1" spirit:left="7"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_sci_wrdata" spirit:left="7"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata[0]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrdata[0]"/>
+                <spirit:internalPortReference spirit:portRef="sci_wrdata[0]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata[1]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrdata[1]"/>
+                <spirit:internalPortReference spirit:portRef="sci_wrdata[1]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata[2]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrdata[2]"/>
+                <spirit:internalPortReference spirit:portRef="sci_wrdata[2]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata[3]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrdata[3]"/>
+                <spirit:internalPortReference spirit:portRef="sci_wrdata[3]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata[4]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrdata[4]"/>
+                <spirit:internalPortReference spirit:portRef="sci_wrdata[4]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata[5]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrdata[5]"/>
+                <spirit:internalPortReference spirit:portRef="sci_wrdata[5]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata[6]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata[6]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrdata[6]"/>
+                <spirit:internalPortReference spirit:portRef="sci_wrdata[6]" spirit:componentRef="pcie_x1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>pcie_x1_sci_wrdata[7]</spirit:name>
+                <spirit:displayName>pcie_x1_sci_wrdata[7]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="pcie_x1_sci_wrdata[7]"/>
+                <spirit:internalPortReference spirit:portRef="sci_wrdata[7]" spirit:componentRef="pcie_x1"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_ca_cpld_vc0</spirit:name>
