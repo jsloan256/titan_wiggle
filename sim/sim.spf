@@ -1,0 +1,24 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="sim" simType="Active-HDL">
+    <Source worklib="work" path="claritycores/refclk/refclk.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/ddr3_x16/ddr3_sdram_mem_params_ddr3_x16.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/ddr3_x16/ddr3_x16_beh.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/ddr3_x16/ddr_clks_ddr3_x16.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/ddr3_x16/ddr3_sdram_mem_top_wrapper_ddr3_x16.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_x1_core_bb.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs_softlogic.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_sync1s.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_ctc.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pipe.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_phy.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_extref.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="claritycores/pcie_x1/pcie_x1.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="micron/ddr3.v" type="SYSTEMVERILOG" include="micron/1024Mb_ddr3_parameters.vh"/>
+    <Source worklib="work" path="claritycores/claritycores.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="titan_wiggle/source/wiggle.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="titan_wiggle/source/wiggle_tb.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5um"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="wiggle_tb"/>
+</BaliSimProject>
