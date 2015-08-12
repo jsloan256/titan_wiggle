@@ -9,7 +9,7 @@ output hdoutp0, hdoutn0;
 output ddr3_rstn;
 output ddr3_ck0;
 output ddr3_cke;
-output [13:0] ddr3_a;
+output [12:0] ddr3_a;
 output [2:0] ddr3_ba;
 inout [15:0] ddr3_d;
 output [1:0] ddr3_dm;

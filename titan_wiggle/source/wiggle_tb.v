@@ -12,7 +12,7 @@ wire hdoutp0, hdoutn0;
 wire ddr3_rstn;
 wire ddr3_ck0;
 wire ddr3_cke;
-wire [13:0] ddr3_a;
+wire [12:0] ddr3_a;
 wire [2:0] ddr3_ba;
 wire [15:0] ddr3_d;
 wire [1:0] ddr3_dm;
@@ -53,6 +53,24 @@ wiggle U1 ( .osc(osc),
 				.ddr3_rasn(ddr3_rasn),
 				.ddr3_wen(ddr3_wen),
 				.ddr3_odt(ddr3_odt)
+			);
+
+ddr3 U11 ( .rst_n(ddr3_rstn),
+				.ck(ddr3_ck0),
+				.ck_n(~ddr3_ck0),
+				.cke(ddr3_cke),
+				.cs_n(ddr3_csn),
+				.ras_n(ddr3_rasn),
+				.cas_n(ddr3_casn),
+				.we_n(ddr3_wen),
+				.dm_tdqs(ddr3_dm),
+				.ba(ddr3_ba),
+				.addr(ddr3_a),
+				.dq(ddr3_d),
+				.dqs(ddr3_dqs),
+				.dqs_n(),	// ~ddr3_dqs ???
+				.tdqs_n(),
+				.odt(ddr3_odt)		// ???
 			);
 
 always

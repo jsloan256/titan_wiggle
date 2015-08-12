@@ -13,7 +13,7 @@
     <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_phy.v" type="VERILOG" include="none"/>
     <Source worklib="work" path="claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_extref.v" type="VERILOG" include="none"/>
     <Source worklib="work" path="claritycores/pcie_x1/pcie_x1.v" type="VERILOG" include="none"/>
-    <Source worklib="work" path="micron/ddr3.v" type="SYSTEMVERILOG" include="micron/1024Mb_ddr3_parameters.vh"/>
+    <Source worklib="work" path="sim/ddr3.v" type="SYSTEMVERILOG" include="sim/1024Mb_ddr3_parameters.vh"/>
     <Source worklib="work" path="claritycores/claritycores.v" type="VERILOG" include="none"/>
     <Source worklib="work" path="titan_wiggle/source/wiggle.v" type="VERILOG" include="none"/>
     <Source worklib="work" path="titan_wiggle/source/wiggle_tb.v" type="VERILOG" include="none"/>
