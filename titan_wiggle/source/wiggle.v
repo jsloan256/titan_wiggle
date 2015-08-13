@@ -28,6 +28,16 @@ reg shift;
 wire [31:0] gpio_a;
 wire [31:0] gpio_b;
 
+wire ddr3_sclk;
+wire ddr3_init_done;
+reg ddr3_init_start;
+
+parameter IDLE = 2'b00,
+			INIT_DDR = 2'b01,
+			INIT_DONE = 2'b11;
+
+reg [1:0] state, next;
+
 assign rst = ~perstn;
 assign rstn = ~rst;
 assign clk = clk125;
@@ -65,6 +75,32 @@ end
 assign gpio_a = sreg;
 assign gpio_b = sreg;
 
+
+// DDR3 control state machine
+	always @(posedge ddr3_sclk or posedge rst)
+		if (rst) state <= IDLE;
+		else state <= next;
+
+	always @(state or ddr3_init_done) begin
+		next = 'bx;
+		case (state)
+			IDLE : next = INIT_DDR;
+			INIT_DDR : if (ddr3_init_done) next = INIT_DONE;
+						else next = INIT_DDR;
+			INIT_DONE : next = INIT_DONE;
+		endcase
+	end
+
+	always @(posedge ddr3_sclk or posedge rst)
+		if (rst) begin
+			ddr3_init_start <= 1'b0;
+		end
+		else begin
+			ddr3_init_start <= 1'b0;
+		case (next)
+			INIT_DDR: ddr3_init_start <= 1'b1;
+		endcase
+	end
 
 
 claritycores _inst (
@@ -198,11 +234,11 @@ claritycores _inst (
 
 	// Local user interface
 	.ddr3_x16_clk_in(osc),
-	.ddr3_x16_sclk_out(),
+	.ddr3_x16_sclk_out(ddr3_sclk),
 	.ddr3_x16_clocking_good(),
 	.ddr3_x16_rst_n(rstn), 
 	.ddr3_x16_mem_rst_n(rstn), 
-	.ddr3_x16_init_start(1'b0),
+	.ddr3_x16_init_start(ddr3_init_start),
 	.ddr3_x16_cmd(4'b0000),
 	.ddr3_x16_cmd_valid(1'b0),
 	.ddr3_x16_addr(26'd0),
@@ -210,7 +246,7 @@ claritycores _inst (
 	.ddr3_x16_ofly_burst_len(1'b0),
 	.ddr3_x16_write_data(64'd0), 
 	.ddr3_x16_data_mask(8'd0),
-	.ddr3_x16_init_done(),
+	.ddr3_x16_init_done(ddr3_init_done),
 	.ddr3_x16_cmd_rdy(), 
 	.ddr3_x16_datain_rdy(),
 	.ddr3_x16_read_data(),
