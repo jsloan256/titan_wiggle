@@ -1,4 +1,4 @@
-module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt);
+module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt, ddr3_clocking_good);
 
 input osc;
 output [31:0] gpio_a;
@@ -19,6 +19,7 @@ output ddr3_casn;
 output ddr3_rasn;
 output ddr3_wen;
 output ddr3_odt;
+output ddr3_clocking_good;		// Temp
 
 wire clk;
 wire clk125;
@@ -29,12 +30,16 @@ wire [31:0] gpio_a;
 wire [31:0] gpio_b;
 
 wire ddr3_sclk;
+wire ddr3_clocking_good;
 wire ddr3_init_done;
 reg ddr3_init_start;
+reg [7:0] init_dly_cnt;
 
-parameter IDLE = 2'b00,
-			INIT_DDR = 2'b01,
-			INIT_DONE = 2'b11;
+parameter IDLE = 3'b000,
+			START_CNT = 3'b001,
+			WAITFOR_CNT = 3'b010,
+			INIT_DDR = 3'b011,
+			INIT_DONE = 3'b100;
 
 reg [1:0] state, next;
 
@@ -81,10 +86,13 @@ assign gpio_b = sreg;
 		if (rst) state <= IDLE;
 		else state <= next;
 
-	always @(state or ddr3_init_done) begin
+	always @(state or ddr3_init_done or init_dly_cnt) begin
 		next = 'bx;
 		case (state)
-			IDLE : next = INIT_DDR;
+			IDLE : next = START_CNT;
+			START_CNT : next = WAITFOR_CNT;
+			WAITFOR_CNT : if (init_dly_cnt == 8'h3c) next = INIT_DDR;
+						else next = WAITFOR_CNT;
 			INIT_DDR : if (ddr3_init_done) next = INIT_DONE;
 						else next = INIT_DDR;
 			INIT_DONE : next = INIT_DONE;
@@ -102,6 +110,14 @@ assign gpio_b = sreg;
 		endcase
 	end
 
+always @(posedge ddr3_sclk or posedge rst)
+begin
+	if (rst) begin
+		init_dly_cnt <= 8'h00;
+	end else begin
+		init_dly_cnt <= init_dly_cnt + 1;
+	end
+end
 
 claritycores _inst (
 	// PCIe interface
@@ -235,14 +251,14 @@ claritycores _inst (
 	// Local user interface
 	.ddr3_x16_clk_in(osc),
 	.ddr3_x16_sclk_out(ddr3_sclk),
-	.ddr3_x16_clocking_good(),
+	.ddr3_x16_clocking_good(ddr_clocking_good),
 	.ddr3_x16_rst_n(rstn), 
 	.ddr3_x16_mem_rst_n(rstn), 
 	.ddr3_x16_init_start(ddr3_init_start),
 	.ddr3_x16_cmd(4'b0000),
 	.ddr3_x16_cmd_valid(1'b0),
 	.ddr3_x16_addr(26'd0),
-	.ddr3_x16_cmd_burst_cnt(5'b00000), 
+	.ddr3_x16_cmd_burst_cnt(5'b00001), 
 	.ddr3_x16_ofly_burst_len(1'b0),
 	.ddr3_x16_write_data(64'd0), 
 	.ddr3_x16_data_mask(8'd0),
