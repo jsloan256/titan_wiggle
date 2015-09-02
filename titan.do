@@ -33,6 +33,8 @@ vsim -O5 +access +r -t 1ps -lib titan_design -L ovi_ecp5um -L pmi_work -L pcsd_a
 add wave -noupdate -divider {PCB Signals}
 add wave -noupdate -format Logic /wiggle_tb/osc
 add wave -noupdate -format Logic /wiggle_tb/perstn
+wave -virtual "ddr3" -expand /wiggle_tb/ddr3_rstn /wiggle_tb/ddr3_ck0 /wiggle_tb/ddr3_cke /wiggle_tb/ddr3_csn /wiggle_tb/ddr3_casn /wiggle_tb/ddr3_rasn /wiggle_tb/ddr3_wen /wiggle_tb/ddr3_odt /wiggle_tb/ddr3_a /wiggle_tb/ddr3_ba /wiggle_tb/ddr3_d /wiggle_tb/ddr3_dm /wiggle_tb/dqs /wiggle_tb/ddr3_dqs_n
+
 add wave -noupdate -divider {DDR3 Core Signals}
 add wave -noupdate -format Logic /wiggle_tb/U1/ddr3_init_start
 add wave -noupdate -format Logic /wiggle_tb/U1/ddr3_init_done
