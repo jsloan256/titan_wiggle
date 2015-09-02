@@ -6,6 +6,8 @@
 *.log
 *.tcr
 *.sty
+*.ini
+*.cfg
 claritycores/*
 !claritycores/claritycores.sbx
 !claritycores/refclk/refclk.lpc
@@ -14,3 +16,6 @@ claritycores/*
 titan_wiggle/*
 !titan_wiggle/titan_wiggle.xcf
 !titan_wiggle/source/*
+titan_design/*
+titan_space*
+
