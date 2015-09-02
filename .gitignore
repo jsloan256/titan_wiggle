@@ -3,8 +3,14 @@
 *.xml
 *.zip
 *.html
+*.log
+*.tcr
+*.sty
 claritycores/*
 !claritycores/claritycores.sbx
 !claritycores/refclk/refclk.lpc
 !claritycores/pcie_x1/pcie_x1.lpc
 !claritycores/ddr3_x16/ddr3_x16.lpc
+titan_wiggle/*
+!titan_wiggle/titan_wiggle.xcf
+!titan_wiggle/source/*
