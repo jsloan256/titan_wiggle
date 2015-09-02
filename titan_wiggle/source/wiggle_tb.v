@@ -24,7 +24,6 @@ wire ddr3_casn;
 wire ddr3_rasn;
 wire ddr3_wen;
 wire ddr3_odt;
-wire ddr3_clocking_good;		// Temp
 
 
 // --------------------------------------------------------------------
@@ -56,15 +55,14 @@ wiggle U1 (
 	.ddr3_casn(ddr3_casn),
 	.ddr3_rasn(ddr3_rasn),
 	.ddr3_wen(ddr3_wen),
-	.ddr3_odt(ddr3_odt),
-	.ddr3_clocking_good(ddr3_clocking_good)
+	.ddr3_odt(ddr3_odt)
 );
 
 
 assign ddr3_dqs_n = ~ddr3_dqs;
 
 `define ddr3_x16_DIMM_CS_WIDTH 1
-ddr3_dimm_16_ddr3_x16 U0_ddr3_dimm (
+ddr3_dimm_16_ddr3_x16 U11 (
 	.rst_n(ddr3_rstn),
 	.ddr_dq(ddr3_d),
 	.ddr_dqs(ddr3_dqs),

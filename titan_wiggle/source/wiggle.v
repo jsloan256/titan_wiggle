@@ -1,4 +1,4 @@
-module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt, ddr3_clocking_good);
+module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt);
 
 input osc;
 output [31:0] gpio_a;
@@ -19,7 +19,6 @@ output ddr3_casn;
 output ddr3_rasn;
 output ddr3_wen;
 output ddr3_odt;
-output ddr3_clocking_good;		// Temp
 
 wire clk;
 wire clk125;
@@ -41,7 +40,7 @@ parameter IDLE = 3'b000,
 			INIT_DDR = 3'b011,
 			INIT_DONE = 3'b100;
 
-reg [1:0] state, next;
+reg [2:0] state, next;
 
 assign rst = ~perstn;
 assign rstn = ~rst;
