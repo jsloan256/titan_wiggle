@@ -25,6 +25,7 @@ claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs.v \
 claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_phy.v \
 claritycores/pcie_x1/pcie_x1.v \
 claritycores/claritycores.v \
+titan_wiggle/source/ddr3_init_sm.v \
 titan_wiggle/source/wiggle.v \
 titan_wiggle/source/wiggle_tb.v
 
@@ -36,8 +37,9 @@ add wave -noupdate -format Logic /wiggle_tb/perstn
 wave -virtual "ddr3" -expand /wiggle_tb/ddr3_rstn /wiggle_tb/ddr3_ck0 /wiggle_tb/ddr3_cke /wiggle_tb/ddr3_csn /wiggle_tb/ddr3_casn /wiggle_tb/ddr3_rasn /wiggle_tb/ddr3_wen /wiggle_tb/ddr3_odt /wiggle_tb/ddr3_a /wiggle_tb/ddr3_ba /wiggle_tb/ddr3_d /wiggle_tb/ddr3_dm /wiggle_tb/dqs /wiggle_tb/ddr3_dqs_n
 
 add wave -noupdate -divider {DDR3 Core Signals}
+add wave -noupdate -format Logic /wiggle_tb/U1/ddr3_sclk
 add wave -noupdate -format Logic /wiggle_tb/U1/ddr3_init_start
 add wave -noupdate -format Logic /wiggle_tb/U1/ddr3_init_done
-add wave -noupdate -format Literal -radix hexadecimal /wiggle_tb/U1/state
+add wave -noupdate -format Literal -radix hexadecimal /wiggle_tb/U1/ddr3_init_sm_inst/state
 
 run -all

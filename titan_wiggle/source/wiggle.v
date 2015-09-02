@@ -32,15 +32,6 @@ wire ddr3_sclk;
 wire ddr3_clocking_good;
 wire ddr3_init_done;
 reg ddr3_init_start;
-reg [7:0] init_dly_cnt;
-
-parameter IDLE = 3'b000,
-			START_CNT = 3'b001,
-			WAITFOR_CNT = 3'b010,
-			INIT_DDR = 3'b011,
-			INIT_DONE = 3'b100;
-
-reg [2:0] state, next;
 
 assign rst = ~perstn;
 assign rstn = ~rst;
@@ -80,43 +71,13 @@ assign gpio_a = sreg;
 assign gpio_b = sreg;
 
 
-// DDR3 control state machine
-	always @(posedge ddr3_sclk or posedge rst)
-		if (rst) state <= IDLE;
-		else state <= next;
-
-	always @(state or ddr3_init_done or init_dly_cnt) begin
-		next = 'bx;
-		case (state)
-			IDLE : next = START_CNT;
-			START_CNT : next = WAITFOR_CNT;
-			WAITFOR_CNT : if (init_dly_cnt == 8'h3c) next = INIT_DDR;
-						else next = WAITFOR_CNT;
-			INIT_DDR : if (ddr3_init_done) next = INIT_DONE;
-						else next = INIT_DDR;
-			INIT_DONE : next = INIT_DONE;
-		endcase
-	end
-
-	always @(posedge ddr3_sclk or posedge rst)
-		if (rst) begin
-			ddr3_init_start <= 1'b0;
-		end
-		else begin
-			ddr3_init_start <= 1'b0;
-		case (next)
-			INIT_DDR: ddr3_init_start <= 1'b1;
-		endcase
-	end
-
-always @(posedge ddr3_sclk or posedge rst)
-begin
-	if (rst) begin
-		init_dly_cnt <= 8'h00;
-	end else begin
-		init_dly_cnt <= init_dly_cnt + 1;
-	end
-end
+// FSM to init 
+ddr3_init_sm ddr3_init_sm_inst (
+	.rst(rst), 
+	.clk(ddr3_sclk),
+	.init_done(ddr3_init_done),
+	.init_start(ddr3_init_start)
+);
 
 claritycores _inst (
 	// PCIe interface

@@ -96,7 +96,7 @@ begin
 	$display($time, " << Releasing PERSTn >>");
 	perstn = 1'b1;
 
-	#10000000
+	#100000
 	$display($time, " << Stopping the Simulation >>");
 	$stop;
 end
