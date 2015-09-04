@@ -9,7 +9,10 @@
         <Source name="claritycores/claritycores.sbx" type="sbx" type_short="SBX">
             <Options/>
         </Source>
-        <Source name="sim/sim.spf" type="Simulation Project File" type_short="SPF">
+        <Source name="titan_wiggle/source/ddr3_data_exercise_sm.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="titan_wiggle/source/ddr3_init_sm.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="titan_wiggle.lpf" type="Logic Preference" type_short="LPF">
