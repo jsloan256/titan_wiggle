@@ -32,6 +32,17 @@ wire ddr3_sclk;
 wire ddr3_clocking_good;
 wire ddr3_init_done;
 reg ddr3_init_start;
+wire ddr3_cmd_rdy;
+wire ddr3_datain_rdy;
+wire [63:0] ddr3_read_data;
+wire ddr3_cmd_valid;
+wire [3:0] ddr3_cmd;
+wire [4:0] ddr3_cmd_burst_cnt;
+wire [25:0] ddr3_addr;
+wire [63:0] ddr3_write_data;
+wire [7:0] ddr3_data_mask;
+wire ddr3_x16_read_data_valid;
+wire ddr3_x16_wl_err;
 
 assign rst = ~perstn;
 assign rstn = ~rst;
@@ -71,12 +82,29 @@ assign gpio_a = sreg;
 assign gpio_b = sreg;
 
 
-// FSM to init 
+// FSM to init ddr3
 ddr3_init_sm ddr3_init_sm_inst (
 	.rst(rst), 
 	.clk(ddr3_sclk),
 	.init_done(ddr3_init_done),
 	.init_start(ddr3_init_start)
+);
+
+// FSM to perform a simple write/read test on the DDR3
+ddr3_data_exercise_sm ddr3_data_exercise_sm_inst (
+	.rst(rst), 
+	.clk(ddr3_sclk),
+	.cmd_rdy(ddr3_cmd_rdy),
+	.datain_rdy(ddr3_datain_rdy),
+	.read_data(ddr3_read_data),
+	.read_data_valid(ddr3_read_data_valid),
+	.wl_err(ddr3_wl_err),
+	.cmd_valid(ddr3_cmd_valid),
+	.cmd(ddr3_cmd),
+	.cmd_burst_cnt(ddr3_cmd_burst_cnt),
+	.addr(ddr3_addr),
+	.write_data(ddr3_write_data),
+	.data_mask(ddr3_data_mask)
 );
 
 claritycores _inst (
@@ -211,23 +239,23 @@ claritycores _inst (
 	// Local user interface
 	.ddr3_x16_clk_in(osc),
 	.ddr3_x16_sclk_out(ddr3_sclk),
-	.ddr3_x16_clocking_good(ddr_clocking_good),
+	.ddr3_x16_clocking_good(ddr3_clocking_good),
 	.ddr3_x16_rst_n(rstn), 
-	.ddr3_x16_mem_rst_n(rstn), 
+	.ddr3_x16_mem_rst_n(1'b1), 
 	.ddr3_x16_init_start(ddr3_init_start),
-	.ddr3_x16_cmd(4'b0000),
-	.ddr3_x16_cmd_valid(1'b0),
-	.ddr3_x16_addr(26'd0),
-	.ddr3_x16_cmd_burst_cnt(5'b00001), 
+	.ddr3_x16_cmd(ddr3_cmd),
+	.ddr3_x16_cmd_valid(ddr3_cmd_valid),
+	.ddr3_x16_addr(ddr3_addr),
+	.ddr3_x16_cmd_burst_cnt(ddr3_cmd_burst_cnt), 
 	.ddr3_x16_ofly_burst_len(1'b0),
-	.ddr3_x16_write_data(64'd0), 
-	.ddr3_x16_data_mask(8'd0),
+	.ddr3_x16_write_data(ddr3_write_data), 
+	.ddr3_x16_data_mask(ddr3_data_mask),
 	.ddr3_x16_init_done(ddr3_init_done),
-	.ddr3_x16_cmd_rdy(), 
-	.ddr3_x16_datain_rdy(),
-	.ddr3_x16_read_data(),
-	.ddr3_x16_read_data_valid(),
-	.ddr3_x16_wl_err()
+	.ddr3_x16_cmd_rdy(ddr3_cmd_rdy), 
+	.ddr3_x16_datain_rdy(ddr3_datain_rdy),
+	.ddr3_x16_read_data(ddr3_read_data),
+	.ddr3_x16_read_data_valid(ddr3_read_data_valid),
+	.ddr3_x16_wl_err(ddr3_wl_err)
 );
 
 endmodule

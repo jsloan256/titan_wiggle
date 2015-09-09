@@ -29,8 +29,8 @@ wire ddr3_odt;
 // --------------------------------------------------------------------
 // Power on Reset
 // --------------------------------------------------------------------
+GSR     GSR_INST(.GSR(perstn));
 PUR     PUR_INST(.PUR(1'b1));
-GSR     GSR_INST(.GSR(1'b1));
 
 wiggle U1 ( 
 	.osc(osc),
@@ -70,10 +70,10 @@ ddr3_dimm_16_ddr3_x16 U11 (
 	.ddr_dm_tdqs(ddr3_dm),
 	.ddr_ad(ddr3_a),
 	.ddr_ba(ddr3_ba),
-	.ddr_ras_n(ddr3_ras_n),
-	.ddr_cas_n(ddr3_cas_n),
-	.ddr_we_n(ddr3_we_n),
-	.ddr_cs_n(ddr3_cs_n),
+	.ddr_ras_n(ddr3_rasn),
+	.ddr_cas_n(ddr3_casn),
+	.ddr_we_n(ddr3_wen),
+	.ddr_cs_n(ddr3_csn),
 	.ddr_clk(ddr3_ck0),
 	.ddr_clk_n(~ddr3_ck0),
 	.ddr_cke(ddr3_cke),
