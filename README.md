@@ -17,7 +17,8 @@ This is a simple Verilog project to validate the Titan PCI Express development c
 * Open the project (titan_wiggle.ldf)
 * Open Clarity Designer by double-clicking on claritycores.sbx in the file list
   * Download and install the IP cores (if not installed)
-    * Click on the **Lattice IP Server** tab (the bottom set of tabs)
+    * Click on the **Catalog** tab (in the top set of tabs)
+    * Click on the **Lattice IP Server** tab (in the bottom set of tabs)
     * Locate the **PCI Express Endpoint** core and verify that the description is **PCI Express x1/x2/x4 Endpoint - Optimized for LatticeECP3 and ECP5UM** and the version is 6.1 (right click to install)
     * Locate the **DDR3 SDRAM Controller** core and verify that the version is 3.0 (right click to install)
   * Click on builder located in the top set of tabs
