@@ -153,8 +153,8 @@ claritycores _inst (
 	.pcie_x1_nph_processed_vc0(1'b0), 
 	.pcie_x1_pd_processed_vc0(1'b0), 
 	.pcie_x1_npd_processed_vc0(1'b0), 
-	.pcie_x1_pd_num_vc0(1'b0),
-	.pcie_x1_npd_num_vc0(1'b0), 
+	.pcie_x1_pd_num_vc0(8'd0),
+	.pcie_x1_npd_num_vc0(8'd0), 
 
 	// Control and Status
 	.pcie_x1_no_pcie_train(1'b0), 
@@ -171,7 +171,7 @@ claritycores _inst (
 	.pcie_x1_hl_gto_l0stxfts(1'b0),
 	.pcie_x1_hl_gto_l1(1'b0),
 	.pcie_x1_hl_gto_l2(1'b0), 
-	.pcie_x1_hl_gto_lbk(4'd0),
+	.pcie_x1_hl_gto_lbk(1'b0),
 	.pcie_x1_hl_gto_rcvry(1'b0),
 	.pcie_x1_hl_gto_cfg(1'b0),
 	.pcie_x1_phy_ltssm_state(),
