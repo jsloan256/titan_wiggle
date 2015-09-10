@@ -31,7 +31,7 @@ wire [31:0] gpio_b;
 wire ddr3_sclk;
 wire ddr3_clocking_good;
 wire ddr3_init_done;
-reg ddr3_init_start;
+wire ddr3_init_start;
 wire ddr3_cmd_rdy;
 wire ddr3_datain_rdy;
 wire [63:0] ddr3_read_data;
