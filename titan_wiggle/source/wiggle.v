@@ -1,32 +1,30 @@
 module wiggle (osc, gpio_a, gpio_b, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0, ddr3_rstn, ddr3_ck0, ddr3_cke, ddr3_a, ddr3_ba, ddr3_d, ddr3_dm, ddr3_dqs, ddr3_csn, ddr3_casn, ddr3_rasn, ddr3_wen, ddr3_odt);
 
-input osc;
-output [31:0] gpio_a;
-output [31:0] gpio_b;
-input perstn, refclkp, refclkn, hdinp0, hdinn0;
-output hdoutp0, hdoutn0;
+input wire osc;
+output wire [31:0] gpio_a;
+output wire [31:0] gpio_b;
+input wire perstn, refclkp, refclkn, hdinp0, hdinn0;
+output wire hdoutp0, hdoutn0;
 
-output ddr3_rstn;
-output ddr3_ck0;
-output ddr3_cke;
-output [12:0] ddr3_a;
-output [2:0] ddr3_ba;
-inout [15:0] ddr3_d;
-output [1:0] ddr3_dm;
-inout [1:0] ddr3_dqs;
-output ddr3_csn;
-output ddr3_casn; 
-output ddr3_rasn;
-output ddr3_wen;
-output ddr3_odt;
+output wire ddr3_rstn;
+output wire ddr3_ck0;
+output wire ddr3_cke;
+output wire [12:0] ddr3_a;
+output wire [2:0] ddr3_ba;
+inout wire [15:0] ddr3_d;
+output wire [1:0] ddr3_dm;
+inout wire [1:0] ddr3_dqs;
+output wire ddr3_csn;
+output wire ddr3_casn; 
+output wire ddr3_rasn;
+output wire ddr3_wen;
+output wire ddr3_odt;
 
 wire clk;
 wire clk125;
 reg [23:0] count;
 reg [31:0] sreg;
 reg shift;
-wire [31:0] gpio_a;
-wire [31:0] gpio_b;
 
 wire ddr3_sclk;
 wire ddr3_clocking_good;

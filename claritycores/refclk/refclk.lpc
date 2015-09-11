@@ -11,11 +11,11 @@ CoreName=EXTREF
 CoreRevision=1.1
 CoreStatus=Demo
 CoreType=LPM
-Date=07/25/2015
+Date=09/09/2015
 ModuleName=refclk
 ParameterFileVersion=1.0
 SourceFormat=verilog
-Time=21:35:41
+Time=19:13:02
 VendorName=Lattice Semiconductor Corporation
 [Parameters]
 Destination=Synplicity

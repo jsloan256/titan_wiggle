@@ -78,8 +78,17 @@ ddr3_dimm_16_ddr3_x16 U11 (
 	.ddr_clk_n(~ddr3_ck0),
 	.ddr_cke(ddr3_cke),
 	.ddr_odt(ddr3_odt)
-  );
+);
 
+pcie_x1_bfm_tb pcie_x1_bfm_tb_inst (
+	.perstn(perstn),
+	.refclkp(refclkp),
+	.refclkn(refclkn),
+	.hdinp0(hdoutp0),
+	.hdinn0(hdoutn0),
+	.hdoutp0(hdinp0),
+	.hdoutn0(hdinn0)
+);
 
 
 always

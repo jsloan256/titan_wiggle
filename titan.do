@@ -34,6 +34,7 @@ claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_phy.v \
 claritycores/pcie_x1/pcie_eval/pcie_x1/src/top/pcie_x1_eval_top.v \
 claritycores/pcie_x1/pcie_x1.v \
 claritycores/claritycores.v \
+titan_wiggle/source/pcie_x1_bfm_tb.v \
 titan_wiggle/source/ddr3_init_sm.v \
 titan_wiggle/source/ddr3_data_exercise_sm.v \
 titan_wiggle/source/wiggle.v \

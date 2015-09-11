@@ -1,15 +1,10 @@
 module ddr3_init_sm (rst, clk, init_done, init_start);
 
-input rst;
-input clk;
-input init_done;
-output init_start;
+input wire rst;
+input wire clk;
+input wire init_done;
+output reg init_start;
 
-wire rst;
-wire clk;
-wire init_done;
-
-reg init_start;
 reg [7:0] init_dly_cnt;
 
 parameter IDLE = 3'b000,

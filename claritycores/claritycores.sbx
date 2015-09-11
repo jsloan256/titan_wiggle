@@ -1921,8 +1921,8 @@
             <lattice:device>LFE5UM-45F-6BG381C</lattice:device>
             <lattice:synthesis>synplify</lattice:synthesis>
             <lattice:date>2015-07-24.17:47:39</lattice:date>
-            <lattice:modified>2015-07-26.20:55:33</lattice:modified>
-            <lattice:diamond>3.5.0.102</lattice:diamond>
+            <lattice:modified>2015-09-09.19:44:20</lattice:modified>
+            <lattice:diamond>3.5.1.302</lattice:diamond>
             <lattice:attributes>
                 <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                 <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -2378,7 +2378,7 @@
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
                         <lattice:date>2013-08-07.14:14:33</lattice:date>
-                        <lattice:modified>2015-07-26.20:55:33</lattice:modified>
+                        <lattice:modified>2015-09-09.19:44:20</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -3763,7 +3763,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">07/26/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">09/09/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -3779,7 +3779,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">17:47:26</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">19:17:43</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -5565,7 +5565,7 @@
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
                         <lattice:date>2013-09-22.14:14:33</lattice:date>
-                        <lattice:modified>2015-07-26.20:55:33</lattice:modified>
+                        <lattice:modified>2015-09-09.19:44:20</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -5644,7 +5644,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">07/25/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">09/09/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -5660,7 +5660,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">21:14:38</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">19:13:46</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -6142,7 +6142,7 @@
                     </spirit:model>
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
-                        <lattice:modified>2015-07-26.20:55:33</lattice:modified>
+                        <lattice:modified>2015-09-09.19:44:20</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="BBox">false</lattice:attribute>
@@ -6221,7 +6221,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">07/25/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">09/09/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -6237,7 +6237,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">21:35:41</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">19:13:02</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>

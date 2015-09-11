@@ -16,8 +16,8 @@ CoreRevision=3.0
 ModuleName=ddr3_x16
 SourceFormat=verilog
 ParameterFileVersion=3.0
-Date=07/26/2015
-Time=17:47:26
+Date=09/09/2015
+Time=19:17:43
 
 [Parameters]
 DDRType=2

@@ -1,21 +1,18 @@
 module ddr3_data_exercise_sm (rst, clk, cmd_rdy, datain_rdy, read_data, read_data_valid, wl_err, cmd_valid, cmd, cmd_burst_cnt, addr, write_data, data_mask);
 
-input rst;
-input clk;
-input cmd_rdy;
-input datain_rdy;
-input [63:0] read_data;
-input read_data_valid;
-input wl_err;
-output cmd_valid;
-output [3:0] cmd;
-output [4:0] cmd_burst_cnt;
-output [25:0] addr;
-output [63:0] write_data;
-output [7:0] data_mask;
-
-wire rst;
-wire clk;
+input wire rst;
+input wire clk;
+input wire cmd_rdy;
+input wire datain_rdy;
+input wire [63:0] read_data;
+input wire read_data_valid;
+input wire wl_err;
+output reg cmd_valid;
+output reg [3:0] cmd;
+output wire [4:0] cmd_burst_cnt;
+output reg [25:0] addr;
+output reg [63:0] write_data;
+output wire [7:0] data_mask;
 
 //assign cmd_burst_cnt = 5'b01000;
 assign cmd_burst_cnt = 5'b00001;
@@ -23,11 +20,6 @@ assign cmd_burst_cnt = 5'b00001;
 //assign addr = 26'h0001400;
 //assign write_data = 64'hDEADBEEFDEADBEEF;
 assign data_mask = 8'b00000000;
-
-reg cmd_valid;
-reg [3:0] cmd;
-reg [25:0] addr;
-reg [63:0] write_data;
 
 // DDR3 core commands
 parameter NADA = 4'b0000,
