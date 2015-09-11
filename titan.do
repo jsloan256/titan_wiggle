@@ -46,6 +46,7 @@ add wave -noupdate -divider {PCB Signals}
 add wave -noupdate -format Logic /wiggle_tb/osc
 add wave -noupdate -format Logic /wiggle_tb/perstn
 wave -virtual "ddr3" -expand /wiggle_tb/ddr3_rstn /wiggle_tb/ddr3_ck0 /wiggle_tb/ddr3_cke /wiggle_tb/ddr3_csn /wiggle_tb/ddr3_casn /wiggle_tb/ddr3_rasn /wiggle_tb/ddr3_wen /wiggle_tb/ddr3_odt /wiggle_tb/ddr3_a /wiggle_tb/ddr3_ba /wiggle_tb/ddr3_d /wiggle_tb/ddr3_dm /wiggle_tb/dqs /wiggle_tb/ddr3_dqs_n
+wave -virtual "pcie" -expand /wiggle_tb/hdinp0 /wiggle_tb/hdinn0 /wiggle_tb/hdoutp0 /wiggle_tb/hdoutn0
 
 add wave -noupdate -divider {Internal FPGA Signals}
 add wave -virtual "ddr3_core" -expand /wiggle_tb/U1/ddr3_sclk /wiggle_tb/U1/ddr3_clocking_good /wiggle_tb/U1/ddr3_init_start /wiggle_tb/U1/ddr3_init_done /wiggle_tb/U1/ddr3_addr /wiggle_tb/U1/ddr3_cmd_rdy /wiggle_tb/U1/ddr3_cmd_valid /wiggle_tb/U1/ddr3_cmd /wiggle_tb/U1/ddr3_datain_rdy /wiggle_tb/U1/ddr3_write_data /wiggle_tb/U1/ddr3_data_mask /wiggle_tb/U1/ddr3_cmd_burst_cnt /wiggle_tb/U1/ddr3_read_data /wiggle_tb/U1/ddr3_read_data_valid /wiggle_tb/U1/ddr3_wl_err

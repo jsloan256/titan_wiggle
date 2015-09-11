@@ -4,10 +4,11 @@
 module wiggle_tb ();
 
 reg osc;
+reg clk100;
 wire [31:0] gpio_a;
 wire [31:0] gpio_b;
 reg perstn;
-wire refclkp, refclkn, hdinp0, hdinn0;
+wire hdinp0, hdinn0;
 wire hdoutp0, hdoutn0;
 
 wire ddr3_rstn;
@@ -37,8 +38,8 @@ wiggle U1 (
 	.gpio_a(gpio_a),
 	.gpio_b(gpio_b),
 	.perstn(perstn),
-	.refclkp(refclkp),
-	.refclkn(refclkn),
+	.refclkp(clk100),
+	.refclkn(~clk100),
 	.hdinp0(hdinp0),
 	.hdinn0(hdinn0),
 	.hdoutp0(hdoutp0),
@@ -82,8 +83,8 @@ ddr3_dimm_16_ddr3_x16 U11 (
 
 pcie_x1_bfm_tb pcie_x1_bfm_tb_inst (
 	.perstn(perstn),
-	.refclkp(refclkp),
-	.refclkn(refclkn),
+	.refclkp(clk100),
+	.refclkn(~clk100),
 	.hdinp0(hdoutp0),
 	.hdinn0(hdoutn0),
 	.hdoutp0(hdinp0),
@@ -94,10 +95,14 @@ pcie_x1_bfm_tb pcie_x1_bfm_tb_inst (
 always
 	#100 osc = ~osc;
 
+always
+	#50 clk100 = ~clk100;
+
 initial
 begin
 	$display($time, " << Starting the Simulation >>");
 	osc = 1'b0;
+	clk100 = 1'b0;
 	perstn = 1'b0;
 
 	// Change to ~100ms
