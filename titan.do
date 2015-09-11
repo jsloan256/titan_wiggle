@@ -3,18 +3,26 @@ design create titan_design .
 design open titan_design
 waveformmode asdb
 cd {../..}
-vlog -msg 0 +define+ddr3_x16_NO_DEBUG+ddr3_x16_SIM+SIM+NO_DEBUG \
+vlog -v2k5 -msg 0 +define+ddr3_x16_NO_DEBUG+ddr3_x16_SIM+SIM+NO_DEBUG+RSL_SIM_MODE+SIM_MODE+DEBUG=0+SIMULATE \
 -y claritycores/ddr3_x16/ddr_p_eval/models/ecp5um +libext+.v \
 -y claritycores/ddr3_x16/ddr_p_eval/models/mem +libext+.v \
 +incdir+claritycores/ddr3_x16/ddr_p_eval/testbench/tests/ecp5um \
 +incdir+claritycores/ddr3_x16/ddr_p_eval/ddr3_x16/src/params \
 +incdir+claritycores/ddr3_x16/ddr_p_eval/models/mem \
++incdir+claritycores/pcie_x1/pcie_eval/pcie_x1/testbench/top \
++incdir+claritycores/pcie_x1/pcie_eval/pcie_x1/testbench/testbench \
++incdir+claritycores/pcie_x1/pcie_eval/pcie_x1/src/params \
++incdir+claritycores/pcie_x1/pcie_eval/models/ecp5um \
++incdir+claritycores/pcie_x1/pcie_eval/pcie_x1/src/params \
 claritycores/ddr3_x16/ddr_p_eval/ddr3_x16/src/params/ddr3_sdram_mem_params_ddr3_x16.v \
 claritycores/ddr3_x16/ddr_p_eval/models/ecp5um/pmi_distributed_dpram.v \
 claritycores/ddr3_x16/ddr3_x16_beh.v \
 claritycores/ddr3_x16/ddr_p_eval/models/ecp5um/ddr_clks_src.v \
 claritycores/ddr3_x16/ddr_p_eval/ddr3_x16/src/rtl/top/ecp5um/ddr3_sdram_mem_top_wrapper_ddr3_x16.v \
 claritycores/refclk/refclk.v \
+claritycores/pcie_x1/pcie_eval/pcie_x1/src/params/pci_exp_params.v \
+claritycores/pcie_x1/pcie_eval/pcie_x1/testbench/top/eval_tbtx.v \
+claritycores/pcie_x1/pcie_eval/pcie_x1/testbench/top/eval_tbrx.v \
 claritycores/pcie_x1/pcie_x1_core_bb.v \
 claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_ctc.v \
 claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_sync1s.v \
@@ -23,6 +31,7 @@ claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_extref.v \
 claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs_softlogic.v \
 claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_pcs.v \
 claritycores/pcie_x1/pcie_eval/models/ecp5um/pcie_x1_phy.v \
+claritycores/pcie_x1/pcie_eval/pcie_x1/src/top/pcie_x1_eval_top.v \
 claritycores/pcie_x1/pcie_x1.v \
 claritycores/claritycores.v \
 titan_wiggle/source/ddr3_init_sm.v \
