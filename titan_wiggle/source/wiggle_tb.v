@@ -1,4 +1,4 @@
-`timescale 1 ns / 100ps
+`timescale 100 ps / 100ps
 `include "tb_config_params.v"
 
 module wiggle_tb ();
@@ -92,7 +92,7 @@ pcie_x1_bfm_tb pcie_x1_bfm_tb_inst (
 
 
 always
-	#10 osc = ~osc;
+	#100 osc = ~osc;
 
 initial
 begin
@@ -101,11 +101,11 @@ begin
 	perstn = 1'b0;
 
 	// Change to ~100ms
-	#100
+	#1000
 	$display($time, " << Releasing PERSTn >>");
 	perstn = 1'b1;
 
-	#100000
+	#1000000
 	$display($time, " << Stopping the Simulation >>");
 	$stop;
 end
