@@ -37,29 +37,38 @@ parameter NADA = 4'b0000,
 
 // DDR3 Addresses
 parameter ADDRESS1 = 26'h0001400,
-			ADDRESS2 = 26'h1555555;
+//			ADDRESS2 = 26'h1555555;
+			ADDRESS2 = 26'h0001500;
 
 // DDR3 Data
-parameter DATA1 = 64'h0123456789ABCDEF,
-			DATA2 = 64'hDEADBEEFAAAA5555;
+parameter DATA1_1 = 64'h1AAA2AAA3AAA4AAA,
+			DATA1_2 = 64'hE555D555C555B555,
+			DATA2_1 = 64'h0123456789ABCDEF,
+			DATA2_2 = 64'hFEDCBA9876543210;
 
 // FSM States
-parameter S_IDLE = 3'b000,
-			S_PDOWN_ENT = 3'b001,
-			S_PDOWN_EXIT = 3'b010,
-			S_WRITE1 = 3'b011,
-			S_WRITE2 = 3'b100,
-			S_READ1 = 3'b101,
-			S_READ2 = 3'b110,
-			S_HALT = 3'b111;
+parameter S_IDLE = 4'b0000,
+			S_PDOWN_ENT = 4'b0001,
+			S_PDOWN_EXIT = 4'b0010,
+			S_WRITE_ADDR1 = 4'b0011,
+			S_WRITE_WAIT1 = 4'b0100,
+			S_WRITE_DATA1_1 = 4'b0101,
+			S_WRITE_DATA1_2 = 4'b0110,
+			S_WRITE_ADDR2 = 4'b0111,
+			S_WRITE_WAIT2 = 4'b1000,
+			S_WRITE_DATA2_1 = 4'b1001,
+			S_WRITE_DATA2_2 = 4'b1010,
+			S_READ1 = 4'b1011,
+			S_READ2 = 4'b1100,
+			S_HALT = 4'b1101;
 
-reg [2:0] state, next;
+reg [3:0] state, next;
 
 	always @(posedge clk or posedge rst)
 		if (rst) state <= S_IDLE;
 		else state <= next;
 
-	always @(state or cmd_rdy) begin
+	always @(state or cmd_rdy or datain_rdy) begin
 		next = 'bx;
 		case (state)
 			// Wait for the first cmd_rdy pulse; It signifies that the DDR3 has been initialized
@@ -67,12 +76,20 @@ reg [2:0] state, next;
 						else next = S_IDLE;
 			S_PDOWN_ENT : if (cmd_rdy) next = S_PDOWN_EXIT;
 						else next = S_PDOWN_ENT;
-			S_PDOWN_EXIT : if (cmd_rdy) next = S_WRITE1;
+			S_PDOWN_EXIT : if (cmd_rdy) next = S_WRITE_ADDR1;
 						else next = S_PDOWN_EXIT;
-			S_WRITE1 : if (cmd_rdy) next = S_WRITE2;
-						else next = S_WRITE1;
-			S_WRITE2 : if (cmd_rdy) next = S_READ1;
-						else next = S_WRITE2;
+			S_WRITE_ADDR1 : if (cmd_rdy) next = S_WRITE_WAIT1;
+						else next = S_WRITE_ADDR1;
+			S_WRITE_WAIT1 : if (datain_rdy) next = S_WRITE_DATA1_1;
+						else next = S_WRITE_WAIT1;
+			S_WRITE_DATA1_1 : next = S_WRITE_DATA1_2;
+			S_WRITE_DATA1_2 : next = S_WRITE_ADDR2;
+			S_WRITE_ADDR2 : if (cmd_rdy) next = S_WRITE_WAIT2;
+						else next = S_WRITE_ADDR2;
+			S_WRITE_WAIT2 : if (datain_rdy) next = S_WRITE_DATA2_1;
+						else next = S_WRITE_WAIT2;
+			S_WRITE_DATA2_1 : next = S_WRITE_DATA2_2;
+			S_WRITE_DATA2_2 : next = S_READ1;
 			S_READ1 : if (cmd_rdy) next = S_READ2;
 						else next = S_READ1;
 			S_READ2 : if (cmd_rdy) next = S_HALT;
@@ -102,19 +119,33 @@ reg [2:0] state, next;
 					cmd_valid <= 1'b1;
 					cmd <= PDOWN_EXIT;
 				end
-			S_WRITE1:
+			S_WRITE_ADDR1:
 				begin
 					cmd_valid <= 1'b1;
 					cmd <= WRITE;
 					addr <= ADDRESS1;
-					write_data <= DATA1;
 				end
-			S_WRITE2:
+			S_WRITE_DATA1_1:
+				begin
+					write_data <= DATA1_1;
+				end
+			S_WRITE_DATA1_2:
+				begin
+					write_data <= DATA1_2;
+				end
+			S_WRITE_ADDR2:
 				begin
 					cmd_valid <= 1'b1;
 					cmd <= WRITE;
 					addr <= ADDRESS2;
-					write_data <= DATA2;
+				end
+			S_WRITE_DATA2_1:
+				begin
+					write_data <= DATA2_1;
+				end
+			S_WRITE_DATA2_2:
+				begin
+					write_data <= DATA2_2;
 				end
 			S_READ1:
 				begin
@@ -130,6 +161,5 @@ reg [2:0] state, next;
 				end
 		endcase
 	end
-
 
 endmodule
