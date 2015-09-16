@@ -47,28 +47,32 @@ parameter DATA1_1 = 64'h1AAA2AAA3AAA4AAA,
 			DATA2_2 = 64'hFEDCBA9876543210;
 
 // FSM States
-parameter S_IDLE = 4'b0000,
-			S_PDOWN_ENT = 4'b0001,
-			S_PDOWN_EXIT = 4'b0010,
-			S_WRITE_ADDR1 = 4'b0011,
-			S_WRITE_WAIT1 = 4'b0100,
-			S_WRITE_DATA1_1 = 4'b0101,
-			S_WRITE_DATA1_2 = 4'b0110,
-			S_WRITE_ADDR2 = 4'b0111,
-			S_WRITE_WAIT2 = 4'b1000,
-			S_WRITE_DATA2_1 = 4'b1001,
-			S_WRITE_DATA2_2 = 4'b1010,
-			S_READ1 = 4'b1011,
-			S_READ2 = 4'b1100,
-			S_HALT = 4'b1101;
+parameter S_IDLE = 5'b00000,
+			S_PDOWN_ENT = 5'b00001,
+			S_PDOWN_EXIT = 5'b00010,
+			S_WRITE_ADDR1 = 5'b00011,
+			S_WRITE_WAIT1 = 5'b00100,
+			S_WRITE_DATA1_1 = 5'b00101,
+			S_WRITE_DATA1_2 = 5'b00110,
+			S_WRITE_ADDR2 = 5'b00111,
+			S_WRITE_WAIT2 = 5'b01000,
+			S_WRITE_DATA2_1 = 5'b01001,
+			S_WRITE_DATA2_2 = 5'b01010,
+			S_READ1 = 5'b01011,
+			S_READ2 = 5'b01100,
+			S_READ_WAIT1 = 5'b01101,
+			S_READ_WAIT2 = 5'b01110,
+			S_READ_WAIT3 = 5'b01111,
+			S_READ_WAIT4 = 5'b10000,
+			S_HALT = 5'b10001;
 
-reg [3:0] state, next;
+reg [4:0] state, next;
 
 	always @(posedge clk or posedge rst)
 		if (rst) state <= S_IDLE;
 		else state <= next;
 
-	always @(state or cmd_rdy or datain_rdy) begin
+	always @(state or cmd_rdy or datain_rdy or read_data_valid) begin
 		next = 'bx;
 		case (state)
 			// Wait for the first cmd_rdy pulse; It signifies that the DDR3 has been initialized
@@ -92,8 +96,16 @@ reg [3:0] state, next;
 			S_WRITE_DATA2_2 : next = S_READ1;
 			S_READ1 : if (cmd_rdy) next = S_READ2;
 						else next = S_READ1;
-			S_READ2 : if (cmd_rdy) next = S_WRITE_ADDR1;
+			S_READ2 : if (cmd_rdy) next = S_READ_WAIT1;
 						else next = S_READ2;
+			S_READ_WAIT1 : if (read_data_valid) next = S_READ_WAIT2;
+						else next = S_READ_WAIT1;
+			S_READ_WAIT2 : if (read_data_valid) next = S_READ_WAIT3;
+						else next = S_READ_WAIT2;
+			S_READ_WAIT3 : if (read_data_valid) next = S_READ_WAIT4;
+						else next = S_READ_WAIT3;
+			S_READ_WAIT4 : if (read_data_valid) next = S_WRITE_ADDR1;
+						else next = S_READ_WAIT4;
 			S_HALT : next = S_HALT;
 		endcase
 	end
