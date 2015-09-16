@@ -92,7 +92,7 @@ reg [3:0] state, next;
 			S_WRITE_DATA2_2 : next = S_READ1;
 			S_READ1 : if (cmd_rdy) next = S_READ2;
 						else next = S_READ1;
-			S_READ2 : if (cmd_rdy) next = S_HALT;
+			S_READ2 : if (cmd_rdy) next = S_WRITE_ADDR1;
 						else next = S_READ2;
 			S_HALT : next = S_HALT;
 		endcase
