@@ -1,3 +1,5 @@
+rvl_alias "ddr3_sclk" "ddr3_sclk";
+RVL_ALIAS "ddr3_sclk" "ddr3_sclk"; 
 BLOCK RESETPATHS ;
 BLOCK ASYNCPATHS ;
 LOCATE COMP "perstn" SITE "B19" ;
@@ -229,3 +231,5 @@ IOBUF PORT "ddr3_casn" IO_TYPE=SSTL15_I ;
 IOBUF PORT "ddr3_rasn" IO_TYPE=SSTL15_I ;
 IOBUF PORT "ddr3_wen" IO_TYPE=SSTL15_I ;
 IOBUF PORT "ddr3_odt" IO_TYPE=SSTL15_I ;
+BLOCK JTAGPATHS ;
+FREQUENCY NET "ddr3_sclk" 150.000000 MHz ;
