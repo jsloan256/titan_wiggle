@@ -9,7 +9,7 @@ This is a simple Verilog project to validate the Titan PCI Express development c
   * Vendor ID is dead
 
 # Dependencies
-* Lattice Diamond 3.5
+* Lattice Diamond 3.5.1
 * PCI Express x1/x2/x4 Endpoint - Optimized for ECP5UM (pci_express_endpoint_v6.1)
 * DDR3 SDRAM Controller - v3.0
 
@@ -34,7 +34,10 @@ This is a simple Verilog project to validate the Titan PCI Express development c
       * Right-click on ddr3_x16, then select **Config**
       * In the new dialog, click **Configure** and then **Close** when the process completes
   * Click on the **Generate** button at the top of the Clarity Designer window
+  * Close Clarity Designer
 * Build the FPGA bitstream
+  * Click on the **Process** tab
+  * Right-click on **Bitstream File** and select **Rerun All"
 
 # Simulation Instructions
 * After building the project in Diamond (see above), open Aldec-HDL
