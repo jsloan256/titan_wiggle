@@ -3,16 +3,16 @@
     <Options/>
     <Implementation title="titan_wiggle" dir="titan_wiggle" description="titan_wiggle" synthesis="synplify" default_strategy="Strategy1">
         <Options def_top="wiggle" top="wiggle"/>
-        <Source name="titan_wiggle/source/wiggle.v" type="Verilog" type_short="Verilog">
+        <Source name="source/wiggle.v" type="Verilog" type_short="Verilog">
             <Options top_module="wiggle"/>
         </Source>
         <Source name="claritycores/claritycores.sbx" type="sbx" type_short="SBX">
             <Options/>
         </Source>
-        <Source name="titan_wiggle/source/ddr3_data_exercise_sm.v" type="Verilog" type_short="Verilog">
+        <Source name="source/ddr3_data_exercise_sm.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="titan_wiggle/source/ddr3_init_sm.v" type="Verilog" type_short="Verilog">
+        <Source name="source/ddr3_init_sm.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="reveal.rva" type="Reveal Analyzer Project File" type_short="RVA">
