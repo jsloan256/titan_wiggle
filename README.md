@@ -35,3 +35,8 @@ This is a simple Verilog project to validate the Titan PCI Express development c
       * In the new dialog, click **Configure** and then **Close** when the process completes
   * Click on the **Generate** button at the top of the Clarity Designer window
 * Build the FPGA bitstream
+
+# Simulation Instructions
+* After building the project in Diamond (see above), open Aldec-HDL
+  * In the console, set the current directory to the root of your titan_wiggle checkout (ie. **cd c:\titan_wiggle**)
+  * Run the simulation script: **do titan.do**
