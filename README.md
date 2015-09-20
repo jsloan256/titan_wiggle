@@ -37,7 +37,7 @@ This is a simple Verilog project to validate the Titan PCI Express development c
   * Close Clarity Designer
 * Build the FPGA bitstream
   * Click on the **Process** tab
-  * Right-click on **Bitstream File** and select **Rerun All"
+  * Right-click on **Bitstream File** and select **Rerun All**
 
 # Simulation Instructions
 * After building the project in Diamond (see above), open Aldec-HDL
