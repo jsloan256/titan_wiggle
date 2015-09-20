@@ -1,33 +1,32 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
-<ispXCF version="3.2.0">
+<ispXCF version="3.4.0">
 	<Comment></Comment>
 	<Chain>
 		<Comm>JTAG</Comm>
 		<Device>
 			<SelectedProg value="TRUE"/>
 			<Pos>1</Pos>
-			<Vendor>Lattice</Vendor>
+			<Vendor>WinBond</Vendor>
 			<Family>ECP5UM</Family>
-			<Name>LFE5UM-85F</Name>
-			<IDCode>0x01113043</IDCode>
+			<Name>LFE5UM-45F</Name>
 			<Package>285-pin CSFBGA</Package>
-			<PON>LFE5UM-85F-XXMG285</PON>
+			<PON>LFE5UM-45F-XXMG285</PON>
 			<Bypass>
 				<InstrLen>8</InstrLen>
 				<InstrVal>11111111</InstrVal>
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>Z:/Source/titan_wiggle_32/titan_wiggle/titan_wiggle_titan_wiggle.bit</File>
-			<FileTime>12/02/14 19:36:43</FileTime>
+			<File>C:/Users/John/Documents/Source/titan_wiggle/titan_wiggle/titan_wiggle_titan_wiggle.bit</File>
+			<FileTime>05/29/15 19:44:21</FileTime>
+			<JedecChecksum>N/A</JedecChecksum>
 			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
-				<PreloadLength>954</PreloadLength>
-				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
-				<TCKFrequency>1.000000 MHz</TCKFrequency>
+				<PreloadLength>510</PreloadLength>
+				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>JTAG</AccessMode>
 			</Option>
@@ -42,12 +41,8 @@
 		<VerifyUsercode value="FALSE"/>
 	</ProjectOptions>
 	<CableOptions>
-		<CableName>USB</CableName>
-		<PortAdd>EzUSB-0</PortAdd>
-		<USBID>\\?\usb#vid_1134&amp;amp;pid_8001#6&amp;amp;6ee641b&amp;amp;0&amp;amp;1#</USBID>
-		<JTAGPinSetting>
-			TRST	ABSENT;
-			ISPEN	ABSENT;
-		</JTAGPinSetting>
+		<CableName>USB2</CableName>
+		<PortAdd>FTUSB-0</PortAdd>
+		<USBID>Dual RS232-HS A Location 0000 Serial A</USBID>
 	</CableOptions>
 </ispXCF>

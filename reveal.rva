@@ -1,0 +1,234 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>Wed Sep 16 14:01:48 2015</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="0"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LFE5UM-45F</DeviceName>
+  <DeviceID>17899587</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>reveal.rvl</RVLFileName>
+  <RVSFileName>reveal.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd_rdy" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd_valid" NodeType="0" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd" NodeType="1" PortIndex="2">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd:0" NodeType="2" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd:1" NodeType="2" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd:2" NodeType="2" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd:3" NodeType="2" PortIndex="5"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr" NodeType="1" PortIndex="6">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:0" NodeType="2" PortIndex="6"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:1" NodeType="2" PortIndex="7"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:2" NodeType="2" PortIndex="8"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:3" NodeType="2" PortIndex="9"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:4" NodeType="2" PortIndex="10"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:5" NodeType="2" PortIndex="11"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:6" NodeType="2" PortIndex="12"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:7" NodeType="2" PortIndex="13"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:8" NodeType="2" PortIndex="14"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:9" NodeType="2" PortIndex="15"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:10" NodeType="2" PortIndex="16"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:11" NodeType="2" PortIndex="17"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:12" NodeType="2" PortIndex="18"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:13" NodeType="2" PortIndex="19"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:14" NodeType="2" PortIndex="20"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:15" NodeType="2" PortIndex="21"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:16" NodeType="2" PortIndex="22"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:17" NodeType="2" PortIndex="23"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:18" NodeType="2" PortIndex="24"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:19" NodeType="2" PortIndex="25"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:20" NodeType="2" PortIndex="26"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:21" NodeType="2" PortIndex="27"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:22" NodeType="2" PortIndex="28"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:23" NodeType="2" PortIndex="29"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:24" NodeType="2" PortIndex="30"/>
+    <TraceSignal IsHidden="false" Name="ddr3_addr:25" NodeType="2" PortIndex="31"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd_burst_cnt" NodeType="1" PortIndex="32">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd_burst_cnt:0" NodeType="2" PortIndex="32"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd_burst_cnt:1" NodeType="2" PortIndex="33"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd_burst_cnt:2" NodeType="2" PortIndex="34"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd_burst_cnt:3" NodeType="2" PortIndex="35"/>
+    <TraceSignal IsHidden="false" Name="ddr3_cmd_burst_cnt:4" NodeType="2" PortIndex="36"/>
+    <TraceSignal IsHidden="false" Name="ddr3_datain_rdy" NodeType="0" PortIndex="37"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data" NodeType="1" PortIndex="38">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:0" NodeType="2" PortIndex="38"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:1" NodeType="2" PortIndex="39"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:2" NodeType="2" PortIndex="40"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:3" NodeType="2" PortIndex="41"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:4" NodeType="2" PortIndex="42"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:5" NodeType="2" PortIndex="43"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:6" NodeType="2" PortIndex="44"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:7" NodeType="2" PortIndex="45"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:8" NodeType="2" PortIndex="46"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:9" NodeType="2" PortIndex="47"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:10" NodeType="2" PortIndex="48"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:11" NodeType="2" PortIndex="49"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:12" NodeType="2" PortIndex="50"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:13" NodeType="2" PortIndex="51"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:14" NodeType="2" PortIndex="52"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:15" NodeType="2" PortIndex="53"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:16" NodeType="2" PortIndex="54"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:17" NodeType="2" PortIndex="55"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:18" NodeType="2" PortIndex="56"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:19" NodeType="2" PortIndex="57"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:20" NodeType="2" PortIndex="58"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:21" NodeType="2" PortIndex="59"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:22" NodeType="2" PortIndex="60"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:23" NodeType="2" PortIndex="61"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:24" NodeType="2" PortIndex="62"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:25" NodeType="2" PortIndex="63"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:26" NodeType="2" PortIndex="64"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:27" NodeType="2" PortIndex="65"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:28" NodeType="2" PortIndex="66"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:29" NodeType="2" PortIndex="67"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:30" NodeType="2" PortIndex="68"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:31" NodeType="2" PortIndex="69"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:32" NodeType="2" PortIndex="70"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:33" NodeType="2" PortIndex="71"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:34" NodeType="2" PortIndex="72"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:35" NodeType="2" PortIndex="73"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:36" NodeType="2" PortIndex="74"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:37" NodeType="2" PortIndex="75"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:38" NodeType="2" PortIndex="76"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:39" NodeType="2" PortIndex="77"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:40" NodeType="2" PortIndex="78"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:41" NodeType="2" PortIndex="79"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:42" NodeType="2" PortIndex="80"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:43" NodeType="2" PortIndex="81"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:44" NodeType="2" PortIndex="82"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:45" NodeType="2" PortIndex="83"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:46" NodeType="2" PortIndex="84"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:47" NodeType="2" PortIndex="85"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:48" NodeType="2" PortIndex="86"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:49" NodeType="2" PortIndex="87"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:50" NodeType="2" PortIndex="88"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:51" NodeType="2" PortIndex="89"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:52" NodeType="2" PortIndex="90"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:53" NodeType="2" PortIndex="91"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:54" NodeType="2" PortIndex="92"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:55" NodeType="2" PortIndex="93"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:56" NodeType="2" PortIndex="94"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:57" NodeType="2" PortIndex="95"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:58" NodeType="2" PortIndex="96"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:59" NodeType="2" PortIndex="97"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:60" NodeType="2" PortIndex="98"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:61" NodeType="2" PortIndex="99"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:62" NodeType="2" PortIndex="100"/>
+    <TraceSignal IsHidden="false" Name="ddr3_write_data:63" NodeType="2" PortIndex="101"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data_valid" NodeType="0" PortIndex="102"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data" NodeType="1" PortIndex="103">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:0" NodeType="2" PortIndex="103"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:1" NodeType="2" PortIndex="104"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:2" NodeType="2" PortIndex="105"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:3" NodeType="2" PortIndex="106"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:4" NodeType="2" PortIndex="107"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:5" NodeType="2" PortIndex="108"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:6" NodeType="2" PortIndex="109"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:7" NodeType="2" PortIndex="110"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:8" NodeType="2" PortIndex="111"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:9" NodeType="2" PortIndex="112"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:10" NodeType="2" PortIndex="113"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:11" NodeType="2" PortIndex="114"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:12" NodeType="2" PortIndex="115"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:13" NodeType="2" PortIndex="116"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:14" NodeType="2" PortIndex="117"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:15" NodeType="2" PortIndex="118"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:16" NodeType="2" PortIndex="119"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:17" NodeType="2" PortIndex="120"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:18" NodeType="2" PortIndex="121"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:19" NodeType="2" PortIndex="122"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:20" NodeType="2" PortIndex="123"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:21" NodeType="2" PortIndex="124"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:22" NodeType="2" PortIndex="125"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:23" NodeType="2" PortIndex="126"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:24" NodeType="2" PortIndex="127"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:25" NodeType="2" PortIndex="128"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:26" NodeType="2" PortIndex="129"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:27" NodeType="2" PortIndex="130"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:28" NodeType="2" PortIndex="131"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:29" NodeType="2" PortIndex="132"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:30" NodeType="2" PortIndex="133"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:31" NodeType="2" PortIndex="134"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:32" NodeType="2" PortIndex="135"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:33" NodeType="2" PortIndex="136"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:34" NodeType="2" PortIndex="137"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:35" NodeType="2" PortIndex="138"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:36" NodeType="2" PortIndex="139"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:37" NodeType="2" PortIndex="140"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:38" NodeType="2" PortIndex="141"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:39" NodeType="2" PortIndex="142"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:40" NodeType="2" PortIndex="143"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:41" NodeType="2" PortIndex="144"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:42" NodeType="2" PortIndex="145"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:43" NodeType="2" PortIndex="146"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:44" NodeType="2" PortIndex="147"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:45" NodeType="2" PortIndex="148"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:46" NodeType="2" PortIndex="149"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:47" NodeType="2" PortIndex="150"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:48" NodeType="2" PortIndex="151"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:49" NodeType="2" PortIndex="152"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:50" NodeType="2" PortIndex="153"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:51" NodeType="2" PortIndex="154"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:52" NodeType="2" PortIndex="155"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:53" NodeType="2" PortIndex="156"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:54" NodeType="2" PortIndex="157"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:55" NodeType="2" PortIndex="158"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:56" NodeType="2" PortIndex="159"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:57" NodeType="2" PortIndex="160"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:58" NodeType="2" PortIndex="161"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:59" NodeType="2" PortIndex="162"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:60" NodeType="2" PortIndex="163"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:61" NodeType="2" PortIndex="164"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:62" NodeType="2" PortIndex="165"/>
+    <TraceSignal IsHidden="false" Name="ddr3_read_data:63" NodeType="2" PortIndex="166"/>
+    <TraceSignal IsHidden="false" Name="ddr3_init_start" NodeType="0" PortIndex="167"/>
+    <TraceSignal IsHidden="false" Name="ddr3_init_done" NodeType="0" PortIndex="168"/>
+    <TraceSignal IsHidden="false" Name="ddr3_clocking_good" NodeType="0" PortIndex="169"/>
+    <TraceSignal IsHidden="false" Name="ddr3_init_sm_inst/state" NodeType="1" PortIndex="170">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="ddr3_init_sm_inst/state:0" NodeType="2" PortIndex="170"/>
+    <TraceSignal IsHidden="false" Name="ddr3_init_sm_inst/state:1" NodeType="2" PortIndex="171"/>
+    <TraceSignal IsHidden="false" Name="ddr3_init_sm_inst/state:2" NodeType="2" PortIndex="172"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="0" PreSelectType="0" PreSelect="1" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

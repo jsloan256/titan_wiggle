@@ -5,17 +5,17 @@ Package=CABGA381
 PartName=LFE5UM-45F-6BG381C
 PartType=LFE5UM-45F
 SpeedGrade=6
-Status=C
+Status=P
 [IP]
 CoreName=EXTREF
 CoreRevision=1.1
 CoreStatus=Demo
 CoreType=LPM
-Date=12/18/2014
+Date=09/09/2015
 ModuleName=refclk
 ParameterFileVersion=1.0
 SourceFormat=verilog
-Time=22:44:43
+Time=19:13:02
 VendorName=Lattice Semiconductor Corporation
 [Parameters]
 Destination=Synplicity

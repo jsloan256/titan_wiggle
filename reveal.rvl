@@ -1,0 +1,207 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/John/Documents/Source/titan_wiggle/reveal.rvl" Date="2015-09-16">
+    <IP Version="1_5_062609"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="ECP5UM" DesignName="titan_wiggle"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="2120309460" Name="wiggle_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="ddr3_sclk" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="2048"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_wiggle_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="ddr3_cmd_rdy"/>
+                <Sig Type="SIG" Name="ddr3_cmd_valid"/>
+                <Bus Name="ddr3_cmd">
+                    <Sig Type="SIG" Name="ddr3_cmd:0"/>
+                    <Sig Type="SIG" Name="ddr3_cmd:1"/>
+                    <Sig Type="SIG" Name="ddr3_cmd:2"/>
+                    <Sig Type="SIG" Name="ddr3_cmd:3"/>
+                </Bus>
+                <Bus Name="ddr3_addr">
+                    <Sig Type="SIG" Name="ddr3_addr:0"/>
+                    <Sig Type="SIG" Name="ddr3_addr:1"/>
+                    <Sig Type="SIG" Name="ddr3_addr:2"/>
+                    <Sig Type="SIG" Name="ddr3_addr:3"/>
+                    <Sig Type="SIG" Name="ddr3_addr:4"/>
+                    <Sig Type="SIG" Name="ddr3_addr:5"/>
+                    <Sig Type="SIG" Name="ddr3_addr:6"/>
+                    <Sig Type="SIG" Name="ddr3_addr:7"/>
+                    <Sig Type="SIG" Name="ddr3_addr:8"/>
+                    <Sig Type="SIG" Name="ddr3_addr:9"/>
+                    <Sig Type="SIG" Name="ddr3_addr:10"/>
+                    <Sig Type="SIG" Name="ddr3_addr:11"/>
+                    <Sig Type="SIG" Name="ddr3_addr:12"/>
+                    <Sig Type="SIG" Name="ddr3_addr:13"/>
+                    <Sig Type="SIG" Name="ddr3_addr:14"/>
+                    <Sig Type="SIG" Name="ddr3_addr:15"/>
+                    <Sig Type="SIG" Name="ddr3_addr:16"/>
+                    <Sig Type="SIG" Name="ddr3_addr:17"/>
+                    <Sig Type="SIG" Name="ddr3_addr:18"/>
+                    <Sig Type="SIG" Name="ddr3_addr:19"/>
+                    <Sig Type="SIG" Name="ddr3_addr:20"/>
+                    <Sig Type="SIG" Name="ddr3_addr:21"/>
+                    <Sig Type="SIG" Name="ddr3_addr:22"/>
+                    <Sig Type="SIG" Name="ddr3_addr:23"/>
+                    <Sig Type="SIG" Name="ddr3_addr:24"/>
+                    <Sig Type="SIG" Name="ddr3_addr:25"/>
+                </Bus>
+                <Bus Name="ddr3_cmd_burst_cnt">
+                    <Sig Type="SIG" Name="ddr3_cmd_burst_cnt:0"/>
+                    <Sig Type="SIG" Name="ddr3_cmd_burst_cnt:1"/>
+                    <Sig Type="SIG" Name="ddr3_cmd_burst_cnt:2"/>
+                    <Sig Type="SIG" Name="ddr3_cmd_burst_cnt:3"/>
+                    <Sig Type="SIG" Name="ddr3_cmd_burst_cnt:4"/>
+                </Bus>
+                <Sig Type="SIG" Name="ddr3_datain_rdy"/>
+                <Bus Name="ddr3_write_data">
+                    <Sig Type="SIG" Name="ddr3_write_data:0"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:1"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:2"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:3"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:4"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:5"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:6"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:7"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:8"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:9"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:10"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:11"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:12"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:13"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:14"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:15"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:16"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:17"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:18"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:19"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:20"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:21"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:22"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:23"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:24"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:25"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:26"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:27"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:28"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:29"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:30"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:31"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:32"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:33"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:34"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:35"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:36"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:37"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:38"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:39"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:40"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:41"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:42"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:43"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:44"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:45"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:46"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:47"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:48"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:49"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:50"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:51"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:52"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:53"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:54"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:55"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:56"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:57"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:58"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:59"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:60"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:61"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:62"/>
+                    <Sig Type="SIG" Name="ddr3_write_data:63"/>
+                </Bus>
+                <Sig Type="SIG" Name="ddr3_read_data_valid"/>
+                <Bus Name="ddr3_read_data">
+                    <Sig Type="SIG" Name="ddr3_read_data:0"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:1"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:2"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:3"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:4"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:5"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:6"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:7"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:8"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:9"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:10"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:11"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:12"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:13"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:14"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:15"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:16"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:17"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:18"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:19"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:20"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:21"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:22"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:23"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:24"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:25"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:26"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:27"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:28"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:29"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:30"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:31"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:32"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:33"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:34"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:35"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:36"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:37"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:38"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:39"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:40"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:41"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:42"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:43"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:44"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:45"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:46"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:47"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:48"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:49"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:50"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:51"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:52"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:53"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:54"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:55"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:56"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:57"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:58"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:59"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:60"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:61"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:62"/>
+                    <Sig Type="SIG" Name="ddr3_read_data:63"/>
+                </Bus>
+                <Sig Type="SIG" Name="ddr3_init_start"/>
+                <Sig Type="SIG" Name="ddr3_init_done"/>
+                <Sig Type="SIG" Name="ddr3_clocking_good"/>
+                <Bus Name="ddr3_init_sm_inst/state">
+                    <Sig Type="SIG" Name="ddr3_init_sm_inst/state:0"/>
+                    <Sig Type="SIG" Name="ddr3_init_sm_inst/state:1"/>
+                    <Sig Type="SIG" Name="ddr3_init_sm_inst/state:2"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="ddr3_cmd_valid,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>
