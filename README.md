@@ -15,7 +15,7 @@ This is a simple Verilog project to validate the Titan PCI Express development c
 
 # Build Instructions
 * Open the project (titan_wiggle.ldf)
-* Open Clarity Designer by double-clicking on claritycores.sbx in the file list
+* Open Clarity Designer by double-clicking on **claritycores.sbx** in the file list
   * Download and install the IP cores (if not installed)
     * Click on the **Catalog** tab (in the top set of tabs)
     * Click on the **Lattice IP** tab (in the bottom set of tabs)
