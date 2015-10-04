@@ -544,18 +544,6 @@
                     </spirit:vendorExtensions>
                 </spirit:port>
                 <spirit:port>
-                    <spirit:name>pcie_x1_hl_gto_lbk</spirit:name>
-                    <spirit:displayName>pcie_x1_hl_gto_lbk</spirit:displayName>
-                    <spirit:wire>
-                        <spirit:direction>in</spirit:direction>
-                    </spirit:wire>
-                    <spirit:vendorExtensions>
-                        <lattice:attributes>
-                            <lattice:attribute lattice:name="exportFrom">pcie_x1.hl_gto_lbk</lattice:attribute>
-                        </lattice:attributes>
-                    </spirit:vendorExtensions>
-                </spirit:port>
-                <spirit:port>
                     <spirit:name>pcie_x1_hl_gto_rcvry</spirit:name>
                     <spirit:displayName>pcie_x1_hl_gto_rcvry</spirit:displayName>
                     <spirit:wire>
@@ -1921,7 +1909,7 @@
             <lattice:device>LFE5UM-45F-6BG381C</lattice:device>
             <lattice:synthesis>synplify</lattice:synthesis>
             <lattice:date>2015-07-24.17:47:39</lattice:date>
-            <lattice:modified>2015-09-09.19:44:20</lattice:modified>
+            <lattice:modified>2015-10-04.18:27:25</lattice:modified>
             <lattice:diamond>3.5.1.302</lattice:diamond>
             <lattice:attributes>
                 <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
@@ -2378,7 +2366,7 @@
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
                         <lattice:date>2013-08-07.14:14:33</lattice:date>
-                        <lattice:modified>2015-09-09.19:44:20</lattice:modified>
+                        <lattice:modified>2015-10-04.18:27:25</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -3763,7 +3751,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">09/09/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">09/21/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -3779,7 +3767,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">19:17:43</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">20:25:25</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -5565,7 +5553,7 @@
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
                         <lattice:date>2013-09-22.14:14:33</lattice:date>
-                        <lattice:modified>2015-09-09.19:44:20</lattice:modified>
+                        <lattice:modified>2015-10-04.18:27:25</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
@@ -5644,7 +5632,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">09/09/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">10/04/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -5660,7 +5648,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">19:13:46</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">18:17:57</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -5677,11 +5665,11 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>BAR0</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">00000000</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">FFFFFF00</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>BAR1</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">00000000</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">FC000000</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>BAR2</lattice:lpckey>
@@ -5777,11 +5765,11 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>EN_BAR0</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>EN_BAR1</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>EN_BAR2</lattice:lpckey>
@@ -5789,7 +5777,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>EN_BAR3</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>EN_BAR4</lattice:lpckey>
@@ -5981,7 +5969,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>REV_ID</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">00</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">06</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>SBP</lattice:lpckey>
@@ -6142,7 +6130,7 @@
                     </spirit:model>
                     <spirit:vendorExtensions>
                         <lattice:synthesis>synplify</lattice:synthesis>
-                        <lattice:modified>2015-09-09.19:44:20</lattice:modified>
+                        <lattice:modified>2015-10-04.18:27:25</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="BBox">false</lattice:attribute>
@@ -6221,7 +6209,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">09/09/2015</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">09/21/2015</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -6237,7 +6225,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">19:13:02</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">20:20:13</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>
@@ -6575,12 +6563,6 @@
                 <spirit:displayName>pcie_x1_hl_gto_l2</spirit:displayName>
                 <spirit:internalPortReference spirit:portRef="hl_gto_l2" spirit:componentRef="pcie_x1"/>
                 <spirit:externalPortReference spirit:portRef="pcie_x1_hl_gto_l2"/>
-            </spirit:adHocConnection>
-            <spirit:adHocConnection>
-                <spirit:name>pcie_x1_hl_gto_lbk</spirit:name>
-                <spirit:displayName>pcie_x1_hl_gto_lbk</spirit:displayName>
-                <spirit:internalPortReference spirit:portRef="hl_gto_lbk" spirit:componentRef="pcie_x1"/>
-                <spirit:externalPortReference spirit:portRef="pcie_x1_hl_gto_lbk"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_hl_gto_rcvry</spirit:name>
@@ -9086,8 +9068,8 @@
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_rx_data_vc0</spirit:name>
                 <spirit:displayName>pcie_x1_rx_data_vc0</spirit:displayName>
-                <spirit:internalPortReference spirit:right="0" spirit:portRef="rx_data_vc0" spirit:componentRef="pcie_x1" spirit:left="15"/>
                 <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_rx_data_vc0" spirit:left="15"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="rx_data_vc0" spirit:componentRef="pcie_x1" spirit:left="15"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_rx_data_vc0[0]</spirit:name>
@@ -9188,8 +9170,8 @@
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_rx_lbk_data</spirit:name>
                 <spirit:displayName>pcie_x1_rx_lbk_data</spirit:displayName>
-                <spirit:internalPortReference spirit:right="0" spirit:portRef="rx_lbk_data" spirit:componentRef="pcie_x1" spirit:left="15"/>
                 <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_rx_lbk_data" spirit:left="15"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="rx_lbk_data" spirit:componentRef="pcie_x1" spirit:left="15"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_rx_lbk_data[0]</spirit:name>
@@ -9290,8 +9272,8 @@
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_rx_lbk_kcntl</spirit:name>
                 <spirit:displayName>pcie_x1_rx_lbk_kcntl</spirit:displayName>
-                <spirit:internalPortReference spirit:right="0" spirit:portRef="rx_lbk_kcntl" spirit:componentRef="pcie_x1" spirit:left="1"/>
                 <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_rx_lbk_kcntl" spirit:left="1"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="rx_lbk_kcntl" spirit:componentRef="pcie_x1" spirit:left="1"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_rx_lbk_kcntl[0]</spirit:name>
@@ -10082,8 +10064,8 @@
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_data_vc0</spirit:name>
                 <spirit:displayName>pcie_x1_tx_data_vc0</spirit:displayName>
-                <spirit:internalPortReference spirit:right="0" spirit:portRef="tx_data_vc0" spirit:componentRef="pcie_x1" spirit:left="15"/>
                 <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_tx_data_vc0" spirit:left="15"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="tx_data_vc0" spirit:componentRef="pcie_x1" spirit:left="15"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_data_vc0[0]</spirit:name>
@@ -10202,8 +10184,8 @@
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_lbk_data</spirit:name>
                 <spirit:displayName>pcie_x1_tx_lbk_data</spirit:displayName>
-                <spirit:internalPortReference spirit:right="0" spirit:portRef="tx_lbk_data" spirit:componentRef="pcie_x1" spirit:left="15"/>
                 <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_tx_lbk_data" spirit:left="15"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="tx_lbk_data" spirit:componentRef="pcie_x1" spirit:left="15"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_lbk_data[0]</spirit:name>
@@ -10304,8 +10286,8 @@
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_lbk_kcntl</spirit:name>
                 <spirit:displayName>pcie_x1_tx_lbk_kcntl</spirit:displayName>
-                <spirit:internalPortReference spirit:right="0" spirit:portRef="tx_lbk_kcntl" spirit:componentRef="pcie_x1" spirit:left="1"/>
                 <spirit:externalPortReference spirit:right="0" spirit:portRef="pcie_x1_tx_lbk_kcntl" spirit:left="1"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="tx_lbk_kcntl" spirit:componentRef="pcie_x1" spirit:left="1"/>
             </spirit:adHocConnection>
             <spirit:adHocConnection>
                 <spirit:name>pcie_x1_tx_lbk_kcntl[0]</spirit:name>
